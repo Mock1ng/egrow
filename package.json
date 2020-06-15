@@ -1,0 +1,17 @@
+{
+  "name": "egrow-private",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w dist/scss/main.scss -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "egrow-private"
+  ],
+  "author": "Mock1ng",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
