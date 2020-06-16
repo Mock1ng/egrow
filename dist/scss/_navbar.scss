@@ -47,15 +47,21 @@ nav {
 
         @include for-desktop {
             width: 100vw;
-            justify-content: space-evenly;
+            justify-content: unset;
             align-items: center;
             height: 12vh;
             flex-direction: row;
             position: relative;
             right: unset;
+            transform: translateX(0);
         }
 
         .navlink {
+
+            @include for-desktop() {
+                flex-grow: 1;
+                text-align: center;
+            }
 
             a {
                 display: inline-block;
@@ -63,6 +69,7 @@ nav {
                 line-height: 12vh;
                 color: #fff;
                 text-decoration: none;
+                width: 100%;
             }
 
             a:hover {

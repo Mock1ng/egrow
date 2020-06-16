@@ -73,18 +73,24 @@ nav {
     @media only screen and (min-width: 1000px) {
       nav .menu-wrapper {
         width: 100vw;
-        justify-content: space-evenly;
+        justify-content: unset;
         align-items: center;
         height: 12vh;
         flex-direction: row;
         position: relative;
-        right: unset; } }
+        right: unset;
+        transform: translateX(0); } }
+    @media only screen and (min-width: 1000px) {
+      nav .menu-wrapper .navlink {
+        flex-grow: 1;
+        text-align: center; } }
     nav .menu-wrapper .navlink a {
       display: inline-block;
       height: 12vh;
       line-height: 12vh;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 100%; }
     nav .menu-wrapper .navlink a:hover {
       cursor: pointer;
       color: #FFE546; }
