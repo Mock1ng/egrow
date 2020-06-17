@@ -1,0 +1,88 @@
+.teacher {
+    height: 520px;
+    padding: $container;
+    position: relative;
+
+    .teacher-carousel {
+        width: 45vw;
+        height: 400px;
+        background: $light-yellow;
+        position: absolute;
+        bottom: 0;
+        border-radius: 20px;
+
+        .teacher-card {
+            height: 400px;
+            position: relative;
+
+            .content {
+                height: 400px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -30%);
+                }
+
+                h4 {
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    line-height: 30px;
+                }
+
+                p {
+                    position: absolute;
+                    top: 73%;
+                    left: 50%;
+                    transform: translate(-50%, -73%);
+                    line-height: 25px;
+                }
+
+            }
+        }
+
+        .slick-next,
+        .slick-prev {
+            width: 70px;
+            height: 70px;
+
+            &:before {
+                font-size: 70px;
+                color: $orange;
+            }
+        }
+
+        .slick-next {
+            right: -35px;
+        }
+
+        .slick-prev {
+            left: -35px;
+        }
+    }
+
+    .content {
+        position: absolute;
+        bottom: 25px;
+        right: 5%;
+        text-align: right;
+        width: 40%;
+
+        h2 {
+            position: relative;
+            font-size: 36px;
+            width: 80%;
+            right: -20%;
+        }
+    }
+}

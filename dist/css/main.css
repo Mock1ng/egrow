@@ -281,3 +281,90 @@ body {
         transition: 0.2s all; }
         body .main-content .egrow .content a:hover {
           filter: brightness(65%); }
+    body .main-content .teacher {
+      height: 520px;
+      padding: 0 5%;
+      position: relative; }
+      body .main-content .teacher .teacher-carousel {
+        width: 45vw;
+        height: 400px;
+        background: #FFF176;
+        position: absolute;
+        bottom: 0;
+        border-radius: 20px; }
+        body .main-content .teacher .teacher-carousel .teacher-card {
+          height: 400px;
+          position: relative; }
+          body .main-content .teacher .teacher-carousel .teacher-card .content {
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            body .main-content .teacher .teacher-carousel .teacher-card .content img {
+              position: absolute;
+              top: 30%;
+              left: 50%;
+              transform: translate(-50%, -30%); }
+            body .main-content .teacher .teacher-carousel .teacher-card .content h4 {
+              position: absolute;
+              top: 60%;
+              left: 50%;
+              transform: translate(-50%, -60%);
+              line-height: 30px; }
+            body .main-content .teacher .teacher-carousel .teacher-card .content p {
+              position: absolute;
+              top: 73%;
+              left: 50%;
+              transform: translate(-50%, -73%);
+              line-height: 25px; }
+        body .main-content .teacher .teacher-carousel .slick-next,
+        body .main-content .teacher .teacher-carousel .slick-prev {
+          width: 70px;
+          height: 70px; }
+          body .main-content .teacher .teacher-carousel .slick-next:before,
+          body .main-content .teacher .teacher-carousel .slick-prev:before {
+            font-size: 70px;
+            color: #F9A825; }
+        body .main-content .teacher .teacher-carousel .slick-next {
+          right: -35px; }
+        body .main-content .teacher .teacher-carousel .slick-prev {
+          left: -35px; }
+      body .main-content .teacher .content {
+        position: absolute;
+        bottom: 25px;
+        right: 5%;
+        text-align: right;
+        width: 40%; }
+        body .main-content .teacher .content h2 {
+          position: relative;
+          font-size: 36px;
+          width: 80%;
+          right: -20%; }
+    body .main-content .methods {
+      height: 520px;
+      padding: 0 5%;
+      position: relative;
+      padding-bottom: 100px; }
+      body .main-content .methods .teacher-carousel {
+        width: 45vw;
+        height: 400px;
+        background: #cecece;
+        position: absolute;
+        bottom: 0; }
+        body .main-content .methods .teacher-carousel .teacher-card {
+          text-align: center; }
+      body .main-content .methods .content {
+        position: absolute;
+        bottom: 25px;
+        right: 5%;
+        text-align: right;
+        width: 40%; }
+        body .main-content .methods .content h2 {
+          font-size: 36px;
+          width: 80%;
+          position: absolute;
+          right: 0; }

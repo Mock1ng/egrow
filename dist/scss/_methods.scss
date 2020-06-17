@@ -1,0 +1,33 @@
+.methods {
+    height: 520px;
+    padding: $container;
+    position: relative;
+    padding-bottom: 100px;
+
+    .teacher-carousel {
+        width: 45vw;
+        height: 400px;
+        background: #cecece;
+        position: absolute;
+        bottom: 0;
+
+        .teacher-card {
+            text-align: center;
+        }
+    }
+
+    .content {
+        position: absolute;
+        bottom: 25px;
+        right: 5%;
+        text-align: right;
+        width: 40%;
+
+        h2 {
+            font-size: 36px;
+            width: 80%;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
