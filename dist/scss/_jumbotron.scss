@@ -4,8 +4,11 @@
     background-size: cover;
     background-position: 0 -25px;
     background-blend-mode: saturation;
-    // filter: ;
+    text-align: center;
 
+    @include for-desktop() {
+        text-align: unset;
+    }
 
 
     .content {
@@ -16,48 +19,66 @@
 
         .title {
             color: #fff;
-            font-size: 100px;
+            font-size: 80px;
             font-weight: bold;
             z-index: 2;
-            float: right;
             position: relative;
-            top: 50px;
+
+            @include for-desktop() {
+                float: right;
+                font-size: 100px;
+                top: 50px;
+            }
         }
 
         .desc {
             color: #fff;
-            font-size: 30px;
-            line-height: 40px;
-            width: 620px;
+            font-size: 20px;
+            line-height: 25px;
             position: absolute;
-            bottom: 200px;
             margin: $container;
+            bottom: 35%;
 
-            &::before {
-                content: '';
-                width: 10px;
-                height: 146px;
-                background: $yellow;
-                margin-right: 20px;
-                display: block;
+            @include for-desktop() {
+                font-size: 30px;
+                line-height: 40px;
+                width: 620px;
                 position: absolute;
-                left: -47px;
-                top: 6px;
+                // width: 420px;
+
+                &::before {
+                    content: '';
+                    width: 10px;
+                    height: 146px;
+                    background: $yellow;
+                    margin-right: 20px;
+                    display: block;
+                    position: absolute;
+                    left: -47px;
+                    top: 6px;
+                }
             }
+
         }
 
         .daftar {
             width: 325px;
-            height: 62px;
+            height: 52px;
             border-radius: 20px;
             background: linear-gradient(#FCCE4F, #F9A825);
             border: none;
-            text-decoration: none;
             transition: 0.1s all;
             color: #fff;
             position: absolute;
-            bottom: 100px;
-            margin: $container;
+            transform: translateX(-50%);
+            bottom: 15%;
+
+            @include for-desktop() {
+                width: 325px;
+                height: 62px;
+                margin: $container;
+                transform: unset;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -67,7 +88,6 @@
             &:focus {
                 outline: 2px solid #fff;
                 outline-offset: 2px;
-                border-radius: 20px;
             }
         }
     }
