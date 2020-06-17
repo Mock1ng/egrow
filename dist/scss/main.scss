@@ -10,6 +10,28 @@
 
 body {
     overflow-x: hidden;
+
+    .outlayer {
+        background: #000;
+        opacity: 0.5;
+        position: absolute;
+        width: 100vw;
+        height: 88vh;
+        bottom: 0;
+        display: none;
+    }
+
+    .display-block {
+        display: block;
+    }
+
+    .yellow {
+        color: $yellow;
+    }
 }
 
+// Navbar start
 @import './navbar';
+
+// Jumbotron start
+@import './jumbotron'
