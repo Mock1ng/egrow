@@ -9,6 +9,8 @@
 }
 
 body {
+
+
     overflow-x: hidden;
 
     .outlayer {
@@ -29,10 +31,18 @@ body {
     .yellow {
         color: $yellow;
     }
+
+    // Navbar start
+    @import './navbar';
+
+    // Jumbotron start
+    @import './jumbotron';
+
+    .main-content {
+        background: url('../../assets/backgrounds/HOME.png');
+        background-size: contain;
+
+
+        @import './egrow';
+    }
 }
-
-// Navbar start
-@import './navbar';
-
-// Jumbotron start
-@import './jumbotron'
