@@ -236,7 +236,8 @@ body {
       position: relative;
       height: 500px;
       text-align: center;
-      padding: 0 3%; }
+      padding: 0 3%;
+      margin-bottom: 30px; }
       @media only screen and (min-width: 1000px) {
         body .main-content .egrow {
           padding: 0 5%;
@@ -284,43 +285,52 @@ body {
     body .main-content .teacher {
       height: 520px;
       padding: 0 5%;
-      position: relative; }
+      position: relative;
+      text-align: center;
+      margin-bottom: 100px; }
+      body .main-content .teacher .teacher-title {
+        font-size: 36px;
+        display: block;
+        margin-bottom: 20px; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .teacher .teacher-title {
+            display: none; } }
       body .main-content .teacher .teacher-carousel {
-        width: 45vw;
-        height: 400px;
+        width: 100%;
+        height: 300px;
         background: #FFF176;
-        position: absolute;
-        bottom: 0;
         border-radius: 20px; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .teacher .teacher-carousel {
+            position: absolute;
+            bottom: 0;
+            width: 45vw;
+            height: 400px; } }
         body .main-content .teacher .teacher-carousel .teacher-card {
-          height: 400px;
-          position: relative; }
+          height: 300px;
+          position: relative;
+          width: 20%; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .teacher .teacher-carousel .teacher-card {
+              height: 400px; } }
           body .main-content .teacher .teacher-carousel .teacher-card .content {
-            height: 400px;
+            height: max-content;
             width: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
             body .main-content .teacher .teacher-carousel .teacher-card .content img {
-              position: absolute;
-              top: 30%;
-              left: 50%;
-              transform: translate(-50%, -30%); }
+              position: relative;
+              margin: 0 auto;
+              margin-bottom: 10px;
+              width: 70%; }
             body .main-content .teacher .teacher-carousel .teacher-card .content h4 {
-              position: absolute;
-              top: 60%;
-              left: 50%;
-              transform: translate(-50%, -60%);
-              line-height: 30px; }
-            body .main-content .teacher .teacher-carousel .teacher-card .content p {
-              position: absolute;
-              top: 73%;
-              left: 50%;
-              transform: translate(-50%, -73%);
               line-height: 25px; }
+            body .main-content .teacher .teacher-carousel .teacher-card .content p {
+              line-height: 18px;
+              font-size: 0.9em; }
         body .main-content .teacher .teacher-carousel .slick-next,
         body .main-content .teacher .teacher-carousel .slick-prev {
           width: 70px;
@@ -334,16 +344,26 @@ body {
         body .main-content .teacher .teacher-carousel .slick-prev {
           left: -35px; }
       body .main-content .teacher .content {
-        position: absolute;
-        bottom: 25px;
-        right: 5%;
         text-align: right;
-        width: 40%; }
+        position: relative; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .teacher .content {
+            position: absolute;
+            bottom: 25px;
+            right: 5%;
+            width: 40%; } }
         body .main-content .teacher .content h2 {
           position: relative;
           font-size: 36px;
           width: 80%;
-          right: -20%; }
+          right: -20%;
+          display: none; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .teacher .content h2 {
+              display: block; } }
+        body .main-content .teacher .content img {
+          width: 100%;
+          text-align: right; }
     body .main-content .methods {
       height: 520px;
       padding: 0 5%;
