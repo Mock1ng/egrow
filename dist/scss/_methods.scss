@@ -1,33 +1,40 @@
 .methods {
-    height: 520px;
+    height: 1054px;
     padding: $container;
-    position: relative;
-    padding-bottom: 100px;
+    text-align: center;
 
-    .teacher-carousel {
-        width: 45vw;
-        height: 400px;
-        background: #cecece;
-        position: absolute;
-        bottom: 0;
-
-        .teacher-card {
-            text-align: center;
-        }
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
     }
 
-    .content {
-        position: absolute;
-        bottom: 25px;
-        right: 5%;
-        text-align: right;
-        width: 40%;
+    .methods-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        h2 {
-            font-size: 36px;
-            width: 80%;
-            position: absolute;
-            right: 0;
+        .method-card {
+            width: 300px;
+            height: 426px;
+            text-align: center;
+            padding: 1% 2% 1% 2%;
+            margin: 0 0px;
+
+            img {
+                width: 90%;
+            }
+
+            h4 {
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 25px;
+            }
         }
     }
 }
