@@ -33,12 +33,13 @@ body {
   body .outlayer {
     background: #000;
     opacity: 0.5;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 88vh;
     bottom: 0;
     display: none;
-    z-index: 99; }
+    z-index: 99;
+    top: 12vh; }
   body .display-block {
     display: block; }
   body .yellow {
@@ -49,14 +50,17 @@ body {
     height: 12vh;
     display: flex;
     padding: 0 5%;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; }
     body nav .logo-wrapper {
       position: relative;
-      z-index: 3; }
+      z-index: 3;
+      width: 60px; }
       @media only screen and (min-width: 1000px) {
         body nav .logo-wrapper {
-          width: 60px;
           margin: 0 20px; } }
       body nav .logo-wrapper .logo {
         position: absolute;
@@ -80,7 +84,7 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      position: absolute;
+      position: fixed;
       right: 0;
       bottom: 0;
       transform: translateX(100%);
@@ -163,10 +167,14 @@ body {
     background-size: cover;
     background-position: 0 -25px;
     background-blend-mode: saturation;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 12vh;
+    margin-bottom: 12vh; }
     @media only screen and (min-width: 1000px) {
       body .jumbotron {
-        text-align: unset; } }
+        text-align: unset;
+        margin-bottom: unset; } }
     body .jumbotron .content {
       z-index: 3;
       position: relative;
@@ -242,15 +250,25 @@ body {
         body .main-content .egrow {
           padding: 0 5%;
           text-align: unset; } }
+      body .main-content .egrow .egrow-title {
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 0 0; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .egrow .egrow-title {
+            display: none; } }
       body .main-content .egrow .egrow-group {
         width: 80vw;
-        height: auto; }
+        height: auto;
+        margin-bottom: 20px; }
         @media only screen and (min-width: 1000px) {
           body .main-content .egrow .egrow-group {
             width: 50vw;
             position: absolute;
             left: 0;
-            bottom: 0; } }
+            bottom: 0;
+            margin: unset; } }
       @media only screen and (min-width: 1000px) {
         body .main-content .egrow .content {
           position: absolute;
@@ -262,11 +280,13 @@ body {
         font-size: 30px;
         font-weight: bold;
         position: relative;
-        margin: 20px 0 30px 0; }
+        margin: 20px 0 30px 0;
+        display: none; }
         @media only screen and (min-width: 1000px) {
           body .main-content .egrow .content h2 {
             font-size: 36px;
-            line-height: 50px; } }
+            line-height: 50px;
+            display: block; } }
       body .main-content .egrow .content p {
         font-size: 16px;
         line-height: 20px;
@@ -296,16 +316,20 @@ body {
           body .main-content .teacher .teacher-title {
             display: none; } }
       body .main-content .teacher .teacher-carousel {
-        width: 100%;
+        width: 85%;
         height: 300px;
         background: #FFF176;
-        border-radius: 20px; }
+        border-radius: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); }
         @media only screen and (min-width: 1000px) {
           body .main-content .teacher .teacher-carousel {
-            position: absolute;
             bottom: 0;
             width: 45vw;
-            height: 400px; } }
+            height: 400px;
+            left: unset;
+            transform: unset; } }
         body .main-content .teacher .teacher-carousel .teacher-card {
           height: 300px;
           position: relative;
@@ -331,27 +355,35 @@ body {
             body .main-content .teacher .teacher-carousel .teacher-card .content p {
               line-height: 18px;
               font-size: 0.9em; }
-        body .main-content .teacher .teacher-carousel .slick-next,
-        body .main-content .teacher .teacher-carousel .slick-prev {
-          width: 70px;
-          height: 70px; }
-          body .main-content .teacher .teacher-carousel .slick-next:before,
-          body .main-content .teacher .teacher-carousel .slick-prev:before {
-            font-size: 70px;
-            color: #F9A825; }
-        body .main-content .teacher .teacher-carousel .slick-next {
-          right: -35px; }
-        body .main-content .teacher .teacher-carousel .slick-prev {
-          left: -35px; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .teacher .teacher-carousel .slick-next,
+          body .main-content .teacher .teacher-carousel .slick-prev {
+            width: 70px;
+            height: 70px; } }
+        body .main-content .teacher .teacher-carousel .slick-next:before,
+        body .main-content .teacher .teacher-carousel .slick-prev:before {
+          color: #F9A825; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .teacher .teacher-carousel .slick-next:before,
+            body .main-content .teacher .teacher-carousel .slick-prev:before {
+              font-size: 70px; } }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .teacher .teacher-carousel .slick-next {
+            right: -35px; } }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .teacher .teacher-carousel .slick-prev {
+            left: -35px; } }
       body .main-content .teacher .content {
         text-align: right;
-        position: relative; }
+        position: relative;
+        height: 100%; }
         @media only screen and (min-width: 1000px) {
           body .main-content .teacher .content {
             position: absolute;
             bottom: 25px;
             right: 5%;
-            width: 40%; } }
+            width: 40%;
+            height: 85%; } }
         body .main-content .teacher .content h2 {
           position: relative;
           font-size: 36px;
@@ -360,14 +392,24 @@ body {
           display: none; }
           @media only screen and (min-width: 1000px) {
             body .main-content .teacher .content h2 {
-              display: block; } }
+              display: block;
+              top: 0; } }
         body .main-content .teacher .content img {
-          width: 100%;
-          text-align: right; }
+          position: absolute;
+          width: 80%;
+          bottom: 0;
+          right: 0; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .teacher .content img {
+              width: 100%; } }
     body .main-content .methods {
-      height: 1054px;
       padding: 0 5%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 100px;
+      margin-top: 190px; }
+      @media only screen and (min-width: 1000px) {
+        body .main-content .methods {
+          margin-top: unset; } }
       body .main-content .methods h2 {
         font-size: 36px;
         margin-bottom: 20px; }
@@ -391,3 +433,51 @@ body {
           body .main-content .methods .methods-wrapper .method-card p {
             font-size: 14px;
             line-height: 25px; }
+    body .main-content .partnerships {
+      padding: 0 5%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .main-content .partnerships h2 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 50px; }
+      body .main-content .partnerships .partner {
+        width: 100%;
+        margin-bottom: 70px; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .partnerships .partner {
+            display: flex; } }
+        body .main-content .partnerships .partner .img {
+          text-align: center;
+          margin-bottom: 20px; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .partnerships .partner .img {
+              text-align: unset;
+              margin: unset; } }
+          body .main-content .partnerships .partner .img img {
+            width: 210px;
+            height: auto; }
+        body .main-content .partnerships .partner .content {
+          text-align: left; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .partnerships .partner .content {
+              text-align: justify;
+              margin-left: 30px; } }
+          body .main-content .partnerships .partner .content h3 {
+            font-size: 30px;
+            margin-bottom: 12px; }
+            @media only screen and (min-width: 1000px) {
+              body .main-content .partnerships .partner .content h3 {
+                font-size: 36px;
+                margin-bottom: 20px; } }
+          body .main-content .partnerships .partner .content p {
+            width: 100%;
+            font-size: 14px;
+            line-height: 25px; }
+            @media only screen and (min-width: 1000px) {
+              body .main-content .partnerships .partner .content p {
+                font-size: 18px;
+                line-height: 40px; } }

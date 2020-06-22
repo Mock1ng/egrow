@@ -4,15 +4,18 @@ nav {
     height: 12vh;
     display: flex;
     padding: $container;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 
     .logo-wrapper {
         position: relative;
         z-index: 3;
+        width: 60px;
 
         @include for-desktop() {
-            width: 60px;
             margin: 0 20px;
         }
 
@@ -42,12 +45,11 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         transform: translateX(100%);
         transition: transform 0.5s ease;
-        ;
         z-index: 100;
 
         @include for-desktop {

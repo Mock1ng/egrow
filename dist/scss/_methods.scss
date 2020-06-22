@@ -1,7 +1,12 @@
 .methods {
-    height: 1054px;
     padding: $container;
     text-align: center;
+    margin-bottom: 100px;
+    margin-top: 190px;
+
+    @include for-desktop() {
+        margin-top: unset;
+    }
 
     h2 {
         font-size: 36px;

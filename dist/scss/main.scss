@@ -16,12 +16,13 @@ body {
     .outlayer {
         background: #000;
         opacity: 0.5;
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 88vh;
         bottom: 0;
         display: none;
         z-index: 99;
+        top: 12vh;
     }
 
     .display-block {
@@ -42,9 +43,16 @@ body {
         background: url('../../assets/backgrounds/HOME.png');
         background-size: contain;
 
-
+        // Egrow section start
         @import './egrow';
+
+        // Teacher section start
         @import './teacher';
+
+        // Methods section start
         @import './methods';
+
+        // Egrow section start
+        @import './partnerships';
     }
 }

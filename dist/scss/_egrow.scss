@@ -10,15 +10,28 @@
         text-align: unset;
     }
 
+    .egrow-title {
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 0 0;
+
+        @include for-desktop() {
+            display: none;
+        }
+    }
+
     .egrow-group {
         width: 80vw;
         height: auto;
+        margin-bottom: 20px;
 
         @include for-desktop() {
             width: 50vw;
             position: absolute;
             left: 0;
             bottom: 0;
+            margin: unset;
         }
     }
 
@@ -37,10 +50,12 @@
             font-weight: bold;
             position: relative;
             margin: 20px 0 30px 0;
+            display: none;
 
             @include for-desktop() {
                 font-size: 36px;
                 line-height: 50px;
+                display: block;
             }
         }
 

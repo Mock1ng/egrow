@@ -5,9 +5,14 @@
     background-position: 0 -25px;
     background-blend-mode: saturation;
     text-align: center;
+    position: relative;
+    top: 12vh;
+    margin-bottom: 12vh;
+
 
     @include for-desktop() {
         text-align: unset;
+        margin-bottom: unset;
     }
 
 

@@ -16,16 +16,20 @@
     }
 
     .teacher-carousel {
-        width: 100%;
+        width: 85%;
         height: 300px;
         background: $light-yellow;
         border-radius: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
 
         @include for-desktop() {
-            position: absolute;
             bottom: 0;
             width: 45vw;
             height: 400px;
+            left: unset;
+            transform: unset;
         }
 
         .teacher-card {
@@ -67,33 +71,47 @@
 
         .slick-next,
         .slick-prev {
-            width: 70px;
-            height: 70px;
+
+            @include for-desktop() {
+                width: 70px;
+                height: 70px;
+            }
 
             &:before {
-                font-size: 70px;
                 color: $orange;
+
+                @include for-desktop() {
+                    font-size: 70px;
+                }
             }
         }
 
         .slick-next {
-            right: -35px;
+
+            @include for-desktop() {
+                right: -35px;
+            }
         }
 
         .slick-prev {
-            left: -35px;
+
+            @include for-desktop() {
+                left: -35px;
+            }
         }
     }
 
     .content {
         text-align: right;
         position: relative;
+        height: 100%;
 
         @include for-desktop() {
             position: absolute;
             bottom: 25px;
             right: 5%;
             width: 40%;
+            height: 85%;
         }
 
         h2 {
@@ -105,12 +123,19 @@
 
             @include for-desktop() {
                 display: block;
+                top: 0;
             }
         }
 
         img {
-            width: 100%;
-            text-align: right;
+            position: absolute;
+            width: 80%;
+            bottom: 0;
+            right: 0;
+
+            @include for-desktop() {
+                width: 100%;
+            }
         }
     }
 }
