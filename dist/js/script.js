@@ -5,4 +5,8 @@ $(document).ready(() => {
         slidesToScroll: 3,
         dots: true
     })
+
+    $('.testimonies-carousel').slick({
+        dots: true
+    })
 })

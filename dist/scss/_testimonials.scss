@@ -1,0 +1,116 @@
+.testimonials {
+    padding: 0 10%;
+
+    .testimonies-carousel {
+        border-radius: 50px;
+
+        .slick-next,
+        .slick-prev {
+
+            @include for-desktop() {
+                width: 70px;
+                height: 70px;
+                z-index: 200;
+            }
+
+            &:before {
+                color: $orange;
+
+                @include for-desktop() {
+                    font-size: 70px;
+                    z-index: 200;
+                }
+            }
+        }
+
+        .slick-next {
+
+            @include for-desktop() {
+                right: -35px;
+            }
+        }
+
+        .slick-prev {
+
+            @include for-desktop() {
+                left: -35px;
+            }
+        }
+    }
+
+    .card-wrapper {
+        width: 100%;
+        height: 420px;
+        background: $cream;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+
+        @include for-desktop() {
+            flex-direction: row;
+            height: 250px;
+            padding: unset;
+        }
+
+        .img-wrapper {
+
+            img {
+                border-radius: 50px 50px 0 0;
+                width: 100%;
+                height: auto;
+
+                @include for-desktop() {
+                    border-radius: 50px 0 0 50px;
+                    width: auto;
+                    height: 250px;
+                }
+            }
+        }
+
+        .content {
+            padding: 0 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+
+            @include for-desktop() {
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 25px;
+                margin-bottom: 10px;
+
+                @include for-desktop() {
+                    font-size: 36px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .testi {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 15px;
+
+                @include for-desktop() {
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .parent {
+                font-weight: bold;
+                font-size: 16px;
+
+                @include for-desktop() {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
