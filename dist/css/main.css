@@ -579,7 +579,8 @@ body {
         display: flex;
         justify-content: center;
         width: 100%;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        margin-bottom: 30px; }
         body .main-content .activities .activity-wrapper .activity {
           width: 100%;
           margin: 25px 15px; }
@@ -604,3 +605,18 @@ body {
                 font-size: 16px;
                 font-weight: lighter;
                 line-height: 25px; } }
+      body .main-content .activities .videos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center; }
+        body .main-content .activities .videos .video {
+          margin: 20px; }
+          body .main-content .activities .videos .video img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 10px; }
+            @media only screen and (min-width: 1000px) {
+              body .main-content .activities .videos .video img {
+                width: 270px; } }
