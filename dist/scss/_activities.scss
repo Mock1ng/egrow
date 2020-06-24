@@ -1,0 +1,55 @@
+.activities {
+    padding: $container;
+    text-align: center;
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+
+        @include for-desktop() {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .activity-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .activity {
+            width: 100%;
+            margin: 25px 15px;
+
+            @include for-desktop() {
+                width: 25%;
+                margin: 0 15px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 30px;
+                margin: 5px 0;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: lighter;
+                line-height: 20px;
+
+                @include for-desktop() {
+                    font-size: 16px;
+                    font-weight: lighter;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

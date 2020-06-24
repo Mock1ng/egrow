@@ -486,7 +486,8 @@ body {
                 font-size: 18px;
                 line-height: 40px; } }
     body .main-content .testimonials {
-      padding: 0 10%; }
+      padding: 0 10%;
+      margin-bottom: 100px; }
       body .main-content .testimonials .testimonies-carousel {
         border-radius: 50px; }
         @media only screen and (min-width: 1000px) {
@@ -564,3 +565,42 @@ body {
             @media only screen and (min-width: 1000px) {
               body .main-content .testimonials .card-wrapper .content .parent {
                 font-size: 20px; } }
+    body .main-content .activities {
+      padding: 0 5%;
+      text-align: center; }
+      body .main-content .activities h2 {
+        font-size: 30px;
+        margin-bottom: 10px; }
+        @media only screen and (min-width: 1000px) {
+          body .main-content .activities h2 {
+            font-size: 36px;
+            margin-bottom: 30px; } }
+      body .main-content .activities .activity-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap; }
+        body .main-content .activities .activity-wrapper .activity {
+          width: 100%;
+          margin: 25px 15px; }
+          @media only screen and (min-width: 1000px) {
+            body .main-content .activities .activity-wrapper .activity {
+              width: 25%;
+              margin: 0 15px; } }
+          body .main-content .activities .activity-wrapper .activity img {
+            width: 100%;
+            height: auto; }
+          body .main-content .activities .activity-wrapper .activity h4 {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 30px;
+            margin: 5px 0; }
+          body .main-content .activities .activity-wrapper .activity p {
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 20px; }
+            @media only screen and (min-width: 1000px) {
+              body .main-content .activities .activity-wrapper .activity p {
+                font-size: 16px;
+                font-weight: lighter;
+                line-height: 25px; } }
