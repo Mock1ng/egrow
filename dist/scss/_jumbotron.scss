@@ -21,13 +21,14 @@
         position: relative;
         height: 100%;
         padding: $container;
+        font-family: 'Poppins-medium', Arial, Helvetica, sans-serif;
 
         .title {
             color: #fff;
             font-size: 80px;
-            font-weight: bold;
             z-index: 2;
             position: relative;
+            font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
 
             @include for-desktop() {
                 float: right;
@@ -47,9 +48,8 @@
             @include for-desktop() {
                 font-size: 30px;
                 line-height: 40px;
-                width: 620px;
+                width: 742px;
                 position: absolute;
-                // width: 420px;
 
                 &::before {
                     content: '';
@@ -77,12 +77,14 @@
             position: absolute;
             transform: translateX(-50%);
             bottom: 15%;
+            font-size: 16px;
 
             @include for-desktop() {
                 width: 325px;
                 height: 62px;
                 margin: $container;
                 transform: unset;
+                font-size: 20px;
             }
 
             &:hover {

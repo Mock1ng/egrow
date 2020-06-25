@@ -1,32 +1,37 @@
 // fonts
 @font-face {
     font-family: Poppins;
-    src: url(../../assets/font/Poppins-Regular.ttf);
+    src: url('../../assets/font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url('../../assets/fonts/Poppins-Bold.ttf');
 }
 
 @font-face {
     font-family: Poppins-extra-bold;
-    src: url(../../assets/font/Poppins-ExtraBold.ttf);
+    src: url('../../assets/font/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
     font-family: Poppins-medium;
-    src: url(../../assets/font/Poppins-Medium.ttf);
+    src: url('../../assets/fonts/Poppins-Medium.ttf');
 }
 
 @font-face {
     font-family: Poppins-light;
-    src: url(../../assets/font/Poppins-Light.ttf);
+    src: url('../../assets/font/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: Open-Sans;
-    src: url(../../assets/font/OpenSans-Regular.ttf);
+    src: url('../../assets/font/OpenSans-Regular.ttf');
 }
 
 @font-face {
     font-family: Open-sans-bold;
-    src: url(../../assets/font/OpenSans-Bold.ttf);
+    src: url('../../assets/font/OpenSans-Bold.ttf');
 }
 
 // color

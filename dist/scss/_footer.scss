@@ -6,6 +6,7 @@ footer {
     position: relative;
     padding: 20px 5%;
     flex-wrap: wrap;
+    font-family: 'Open-sans', Arial, Helvetica, sans-serif;
 
     ul {
         list-style: none;
@@ -23,6 +24,7 @@ footer {
         h6 {
             font-size: 18px;
             line-height: 50px;
+            font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
 
             @include for-desktop() {
                 font-size: 24px;
@@ -66,7 +68,6 @@ footer {
             position: absolute;
             bottom: 30px;
             right: 5%;
-            font-size: 24px;
         }
     }
 }

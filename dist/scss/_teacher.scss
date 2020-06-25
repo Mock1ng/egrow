@@ -9,6 +9,7 @@
         font-size: 36px;
         display: block;
         margin-bottom: 20px;
+        font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
 
         @include for-desktop() {
             display: none;
@@ -49,6 +50,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
+                font-family: 'Open-sans', Arial, Helvetica, sans-serif;
 
                 img {
                     position: relative;
@@ -121,6 +123,7 @@
             width: 80%;
             right: -20%;
             display: none;
+            font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
 
             @include for-desktop() {
                 display: block;
