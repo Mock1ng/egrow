@@ -42,6 +42,7 @@ body {
     .main-content {
         background: url('../../assets/backgrounds/HOME.png');
         background-size: contain;
+        background-position: 0 12vh;
 
         // Egrow section start
         @import './egrow';
@@ -61,4 +62,7 @@ body {
         // Activities section start
         @import './activities';
     }
+
+    // Footer section start
+    @import './footer';
 }
