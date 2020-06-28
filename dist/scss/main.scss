@@ -1,16 +1,13 @@
-@import './variables';
-@import './mixins';
+@import './index/variables';
+@import './index/mixins';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // font-family: 'Roboto', sans-serif;
 }
 
 body {
-
-
     overflow-x: hidden;
 
     .outlayer {
@@ -34,10 +31,11 @@ body {
     }
 
     // Navbar start
-    @import './navbar';
+    @import './index/navbar';
 
     // Jumbotron start
-    @import './jumbotron';
+    @import './index/jumbotron';
+    @import './about/jumbotron-about';
 
     .main-content {
         background: url('../../assets/backgrounds/HOME.png');
@@ -45,24 +43,27 @@ body {
         background-position: 0 12vh;
 
         // Egrow section start
-        @import './egrow';
+        @import './index/egrow';
 
         // Teacher section start
-        @import './teacher';
+        @import './index/teacher';
 
         // Methods section start
-        @import './methods';
+        @import './index/methods';
 
         // Partnerships section start
-        @import './partnerships';
+        @import './index/partnerships';
 
         // Testimonials section start
-        @import './testimonials';
+        @import './index/testimonials';
 
         // Activities section start
-        @import './activities';
+        @import './index/activities';
     }
 
+    // About
+    @import './about/history';
+
     // Footer section start
-    @import './footer';
+    @import './index/footer';
 }

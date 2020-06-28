@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Poppins-extra-bold;
-  src: url("../../assets/font/Poppins-ExtraBold.ttf"); }
+  src: url("../../assets/fonts/Poppins-ExtraBold.ttf"); }
 
 @font-face {
   font-family: Poppins-medium;
@@ -186,7 +186,7 @@ body {
       position: relative;
       height: 100%;
       padding: 0 5%;
-      font-family: 'Poppins-medium', Arial, Helvetica, sans-serif; }
+      font-family: 'Poppins', Arial, Helvetica, sans-serif; }
       body .jumbotron .content .title {
         color: #fff;
         font-size: 80px;
@@ -196,7 +196,7 @@ body {
         @media only screen and (min-width: 1000px) {
           body .jumbotron .content .title {
             float: right;
-            font-size: 100px;
+            font-size: 90px;
             top: 50px; } }
       body .jumbotron .content .desc {
         color: #fff;
@@ -207,9 +207,9 @@ body {
         bottom: 35%; }
         @media only screen and (min-width: 1000px) {
           body .jumbotron .content .desc {
-            font-size: 30px;
+            font-size: 28px;
             line-height: 40px;
-            width: 742px;
+            width: 782px;
             position: absolute; }
             body .jumbotron .content .desc::before {
               content: '';
@@ -246,6 +246,18 @@ body {
         body .jumbotron .content .daftar:focus {
           outline: 2px solid #fff;
           outline-offset: 2px; }
+  body .jumbotron-about {
+    height: 88vh;
+    position: relative;
+    background-image: url("../../assets/backgrounds/Jumbotron2.png");
+    padding: 0 5%;
+    color: #fff;
+    margin-top: 12vh; }
+    body .jumbotron-about h2 {
+      font-size: 90px;
+      font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
+      position: relative;
+      top: 50px; }
   body .main-content {
     background: url("../../assets/backgrounds/HOME.png");
     background-size: contain;
@@ -645,6 +657,26 @@ body {
             @media only screen and (min-width: 1000px) {
               body .main-content .activities .videos .video img {
                 width: 270px; } }
+  body .history {
+    font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+    padding: 0 5%;
+    position: relative;
+    height: 752px; }
+    body .history h3 {
+      font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      margin: 50px 0; }
+    body .history p {
+      font-size: 18px;
+      line-height: 40px;
+      text-align: justify;
+      width: 40%; }
+    body .history img {
+      position: absolute;
+      width: 548px;
+      bottom: 30px;
+      left: 75%;
+      transform: translateX(-60%); }
   body footer {
     height: 360px;
     background: #201400;

@@ -21,7 +21,7 @@
         position: relative;
         height: 100%;
         padding: $container;
-        font-family: 'Poppins-medium', Arial, Helvetica, sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
 
         .title {
             color: #fff;
@@ -32,7 +32,7 @@
 
             @include for-desktop() {
                 float: right;
-                font-size: 100px;
+                font-size: 90px;
                 top: 50px;
             }
         }
@@ -46,9 +46,9 @@
             bottom: 35%;
 
             @include for-desktop() {
-                font-size: 30px;
+                font-size: 28px;
                 line-height: 40px;
-                width: 742px;
+                width: 782px;
                 position: absolute;
 
                 &::before {
