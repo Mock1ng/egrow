@@ -102,12 +102,26 @@ body {
           flex-direction: row;
           position: relative;
           right: unset;
-          transform: translateX(0); } }
+          transform: translateX(0);
+          position: relative; } }
+      body nav .menu-wrapper .active-indicator {
+        display: none;
+        position: absolute;
+        height: 5px;
+        width: 120px;
+        background: #FFE546;
+        z-index: 3000;
+        bottom: 0;
+        transform: translateX(0);
+        transition: 0.4s all ease-in-out; }
+        @media only screen and (min-width: 1000px) {
+          body nav .menu-wrapper .active-indicator {
+            display: block; } }
       body nav .menu-wrapper .navlink {
         font-family: 'Poppins-medium', Arial, Helvetica, sans-serif; }
         @media only screen and (min-width: 1000px) {
           body nav .menu-wrapper .navlink {
-            flex-grow: 1;
+            width: 120px;
             text-align: center; } }
         body nav .menu-wrapper .navlink a {
           display: inline-block;
@@ -115,18 +129,18 @@ body {
           line-height: 12vh;
           color: #fff;
           text-decoration: none;
-          width: 100%; }
+          width: 100%;
+          padding: 0 5px;
+          transition: 0.2s all ease-in-out; }
+          body nav .menu-wrapper .navlink a.active {
+            color: #FFE546; }
+          @media only screen and (min-width: 1000px) {
+            body nav .menu-wrapper .navlink a {
+              width: 120px;
+              transition: 0.4s all ease-in-out; } }
         body nav .menu-wrapper .navlink a:hover {
           cursor: pointer;
           color: #FFE546; }
-          @media only screen and (min-width: 1000px) {
-            body nav .menu-wrapper .navlink a:hover {
-              border-bottom: 5px solid #FFE546; } }
-        body nav .menu-wrapper .navlink .active {
-          color: #FFE546; }
-          @media only screen and (min-width: 1000px) {
-            body nav .menu-wrapper .navlink .active {
-              border-bottom: 5px solid #FFE546; } }
       body nav .menu-wrapper .daftar-btn {
         color: #FFE546;
         border: 1px solid #FFE546;
@@ -141,7 +155,9 @@ body {
         font-family: 'Poppins-medium', Arial, Helvetica, sans-serif; }
         @media only screen and (min-width: 1000px) {
           body nav .menu-wrapper .daftar-btn {
-            width: 200px; } }
+            width: 200px;
+            position: absolute;
+            right: 0; } }
       body nav .menu-wrapper .daftar-btn:hover {
         background: #FFE546;
         color: #201400;

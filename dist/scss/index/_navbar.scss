@@ -61,13 +61,31 @@ nav {
             position: relative;
             right: unset;
             transform: translateX(0);
+            position: relative;
+        }
+
+        .active-indicator {
+            display: none;
+            position: absolute;
+            height: 5px;
+            width: 120px;
+            background: $yellow;
+            z-index: 3000;
+            bottom: 0;
+            transform: translateX(0);
+            transition: 0.4s all ease-in-out;
+
+            @include for-desktop() {
+                display: block;
+            }
         }
 
         .navlink {
             font-family: 'Poppins-medium', Arial, Helvetica, sans-serif;
 
             @include for-desktop() {
-                flex-grow: 1;
+                // flex-grow: 1;
+                width: 120px;
                 text-align: center;
             }
 
@@ -78,24 +96,25 @@ nav {
                 color: #fff;
                 text-decoration: none;
                 width: 100%;
+                padding: 0 5px;
+                transition: 0.2s all ease-in-out;
+
+                &.active {
+                    color: $yellow;
+                }
+
+                @include for-desktop() {
+                    width: 120px;
+                    transition: 0.4s all ease-in-out;
+
+                }
             }
 
             a:hover {
                 cursor: pointer;
                 color: $yellow;
-
-                @include for-desktop() {
-                    border-bottom: 5px solid $yellow;
-                }
             }
 
-            .active {
-                color: $yellow;
-
-                @include for-desktop() {
-                    border-bottom: 5px solid $yellow;
-                }
-            }
         }
 
         .daftar-btn {
@@ -113,6 +132,8 @@ nav {
 
             @include for-desktop() {
                 width: 200px;
+                position: absolute;
+                right: 0;
             }
 
         }
