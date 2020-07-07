@@ -37,7 +37,8 @@ body {
     @import './index/jumbotron';
     @import './about/jumbotron-about';
 
-    .main-content {
+    // Index directory
+    .index-content {
         background: url('../../assets/backgrounds/HOME.png');
         background-size: contain;
         background-position: 0 12vh;
@@ -61,8 +62,17 @@ body {
         @import './index/activities';
     }
 
-    // About
-    @import './about/history';
+    // About directory
+    .about-content {
+        background: url('../../assets/backgrounds/About\ Us.png');
+
+        // History section start
+        @import './about/history';
+
+        // Contact section start
+        @import './about/hubungi-kami';
+
+    }
 
     // Footer section start
     @import './index/footer';

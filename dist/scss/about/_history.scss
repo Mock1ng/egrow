@@ -2,26 +2,52 @@
     font-family: 'Open-sans', Arial, Helvetica, sans-serif;
     padding: $container;
     position: relative;
-    height: 752px;
+    height: 980px;
+    padding-top: 30px;
+    text-align: center;
+
+    @include for-desktop() {
+        padding-top: 70px;
+        height: 752px;
+    }
 
     h3 {
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
-        font-size: 48px;
-        margin: 50px 0;
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: left;
+
+        @include for-desktop() {
+            font-size: 48px;
+            margin-bottom: 50px;
+        }
     }
 
     p {
         font-size: 18px;
-        line-height: 40px;
-        text-align: justify;
-        width: 40%;
+        line-height: 30px;
+        width: 100%;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+
+        @include for-desktop() {
+            font-size: 18px;
+            line-height: 40px;
+            text-align: justify;
+            width: 40%;
+            padding-left: 35px;
+        }
     }
 
     img {
-        position: absolute;
-        width: 548px;
-        bottom: 30px;
-        left: 75%;
-        transform: translateX(-60%);
+        width: 100%;
+
+        @include for-desktop() {
+            position: absolute;
+            width: 481px;
+            top: 70px;
+            right: 5%;
+        }
     }
 }

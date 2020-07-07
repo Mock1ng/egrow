@@ -5,11 +5,20 @@
     padding: $container;
     color: #fff;
     margin-top: 12vh;
+    text-align: center;
+
+    @include for-desktop() {
+        text-align: left;
+    }
 
     h2 {
-        font-size: 90px;
+        font-size: 80px;
         font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
         position: relative;
         top: 50px;
+
+        @include for-desktop() {
+            font-size: 90px;
+        }
     }
 }

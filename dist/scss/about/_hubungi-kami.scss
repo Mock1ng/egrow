@@ -1,0 +1,121 @@
+.contact {
+    height: 537px;
+    position: relative;
+    font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+    padding: $container;
+
+    @include for-desktop() {
+        height: 567px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include for-desktop() {
+            position: absolute;
+            bottom: 0;
+            left: -158px;
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            transform: rotateY(180deg);
+
+            @include for-desktop() {
+                height: 425px;
+                width: auto;
+                margin-right: 70px;
+                position: relative;
+                bottom: -11px;
+
+            }
+        }
+
+        .hubungi {
+            position: relative;
+            top: -70px;
+            // height: 100%;
+
+            h3 {
+                font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
+                font-size: 38px;
+                font-weight: bold;
+                position: relative;
+
+                @include for-desktop() {
+                    font-size: 48px;
+                    margin-bottom: 40px;
+                }
+
+                &::after {
+                    content: '';
+                    height: 3px;
+                    width: 330px;
+                    background: $yellow;
+                    position: absolute;
+                    bottom: -5px;
+                    left: -2.5px;
+
+                    @include for-desktop() {
+                        bottom: -10px;
+                    }
+                }
+            }
+
+            .social-media {
+                .socmed {
+                    display: flex;
+                    margin: 30px 0;
+                    align-items: center;
+
+                    @include for-desktop() {
+                        margin: 30px 0;
+
+                        &::after {
+                            content: '→';
+                            width: 40px;
+                            height: 40px;
+                            color: #008FBC;
+                            font-size: 30px;
+                            font-weight: bold;
+                            transition: 0.2s all ease-in-out;
+                        }
+
+                        &:hover::after {
+                            transform: translateX(10px);
+                        }
+                    }
+
+
+                    .socmed-img {
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 10px;
+
+                        @include for-desktop() {
+                            width: 78px;
+                            height: 78px;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    a {
+                        font-size: 30px;
+                        text-transform: uppercase;
+                        color: #008FBC;
+                        width: 180px;
+                        margin-right: 20px;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

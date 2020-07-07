@@ -34,7 +34,7 @@ const slidingIndicator = () => {
     }
 
 
-    let activated = 0;
+    let activated = indicator.style.transform;
     menuWrapper.onclick = e => {
         for (let i = 0; i < 5; i++) {
             menu[i].classList.remove('active');
@@ -43,28 +43,28 @@ const slidingIndicator = () => {
         if (e.target.id == 'home') {
             indicator.style.transform = 'translateX(0)';
             e.target.classList.add('active');
-            activated = 0;
+            activated = 'translateX(0)';
         } else if (e.target.id == 'about-us') {
             indicator.style.transform = 'translateX(120px)';
             e.target.classList.add('active');
-            activated = 120;
+            activated = 'translateX(120)';
         } else if (e.target.id == 'program') {
             indicator.style.transform = 'translateX(240px)';
             e.target.classList.add('active');
-            activated = 240;
+            activated = 'translateX(240)';
         } else if (e.target.id == 'pengajar') {
             indicator.style.transform = 'translateX(360px)';
             e.target.classList.add('active');
-            activated = 360;
+            activated = 'translateX(360)';
         } else if (e.target.id == 'blog') {
             indicator.style.transform = 'translateX(480px)';
             e.target.classList.add('active');
-            activated = 480;
+            activated = 'translateX(480)';
         }
     }
 
     menuWrapper.onmouseout = e => {
-        indicator.style.transform = `translateX(${activated}px)`
+        indicator.style.transform = activated
     }
 }
 
