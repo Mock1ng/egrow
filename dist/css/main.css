@@ -285,17 +285,23 @@ body {
   body .index-content {
     background: url("../../assets/backgrounds/HOME.png");
     background-size: contain;
-    background-position: 0 12vh; }
+    background-position: 0 0; }
+    @media only screen and (min-width: 1000px) {
+      body .index-content {
+        background-position: 0 12vh; } }
     body .index-content .egrow {
       position: relative;
       height: 500px;
       text-align: center;
       padding: 0 3%;
-      margin-bottom: 30px; }
+      top: 30px;
+      margin-bottom: 40px; }
       @media only screen and (min-width: 1000px) {
         body .index-content .egrow {
           padding: 0 5%;
-          text-align: unset; } }
+          text-align: unset;
+          margin-bottom: 12vh;
+          top: 12vh; } }
       body .index-content .egrow .egrow-title {
         font-size: 30px;
         position: relative;
@@ -367,7 +373,7 @@ body {
       padding: 0 5%;
       position: relative;
       text-align: center;
-      margin-bottom: 100px; }
+      margin-bottom: 80px; }
       body .index-content .teacher .teacher-title {
         font-size: 36px;
         display: block;
@@ -469,15 +475,19 @@ body {
     body .index-content .methods {
       padding: 0 5%;
       text-align: center;
-      margin-bottom: 100px;
-      margin-top: 190px; }
+      margin-top: 190px;
+      position: relative;
+      margin-bottom: 12vh; }
       @media only screen and (min-width: 1000px) {
         body .index-content .methods {
           margin-top: unset; } }
       body .index-content .methods h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
+        font-size: 30px;
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif; }
+        @media only screen and (min-width: 1000px) {
+          body .index-content .methods h2 {
+            margin-bottom: 20px;
+            font-size: 36px; } }
       body .index-content .methods .methods-wrapper {
         display: flex;
         align-items: center;
@@ -485,11 +495,14 @@ body {
         flex-wrap: wrap;
         font-family: 'Open-sans', Arial, Helvetica, sans-serif; }
         body .index-content .methods .methods-wrapper .method-card {
-          width: 300px;
-          height: 426px;
+          width: 70%;
+          height: min-content;
           text-align: center;
           padding: 1% 2% 1% 2%;
-          margin: 0 0px; }
+          margin: 0 0 20px 0; }
+          @media only screen and (min-width: 1000px) {
+            body .index-content .methods .methods-wrapper .method-card {
+              width: 300px; } }
           body .index-content .methods .methods-wrapper .method-card img {
             width: 90%; }
           body .index-content .methods .methods-wrapper .method-card h4 {
@@ -766,7 +779,7 @@ body {
               width: auto;
               margin-right: 70px;
               position: relative;
-              bottom: -11px; } }
+              bottom: -14px; } }
         body .about-content .contact .content .hubungi {
           position: relative;
           top: -70px; }
