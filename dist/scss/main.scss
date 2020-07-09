@@ -78,6 +78,11 @@ body {
 
     }
 
+    // Pengajar directory
+    .pengajar {
+        @import './pengajar/pengajar';
+    }
+
     // Footer section start
     @import './index/footer';
 }

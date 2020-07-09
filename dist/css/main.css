@@ -17,11 +17,11 @@
 
 @font-face {
   font-family: Poppins-light;
-  src: url("../../assets/font/Poppins-Light.ttf"); }
+  src: url("../../assets/fonts/Poppins-Light.ttf"); }
 
 @font-face {
   font-family: Open-Sans;
-  src: url("../../assets/font/OpenSans-Regular.ttf"); }
+  src: url("../../assets/fonts/OpenSans-Regular.ttf"); }
 
 @font-face {
   font-family: Open-sans-bold;
@@ -769,12 +769,12 @@ body {
             width: 100%;
             height: auto;
             flex-direction: row; } }
-        body .about-content .contact .content img {
+        body .about-content .contact .content .hijab-ilus {
           width: 100%;
           height: auto;
           transform: rotateY(180deg); }
           @media only screen and (min-width: 1000px) {
-            body .about-content .contact .content img {
+            body .about-content .contact .content .hijab-ilus {
               height: 425px;
               width: auto;
               margin-right: 70px;
@@ -838,6 +838,64 @@ body {
               width: 180px;
               margin-right: 20px;
               text-decoration: none; }
+  body .pengajar .context {
+    position: relative;
+    top: 12vh;
+    padding: 0 5%;
+    height: 200vh; }
+    body .pengajar .context h3 {
+      font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      margin: 40px 0; }
+    body .pengajar .context .table-container {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 2px 2px 4px #adadad;
+      width: 100%; }
+      body .pengajar .context .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 20px;
+        text-align: center;
+        font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+        position: relative;
+        z-index: 2; }
+        body .pengajar .context .table-container table thead tr {
+          border: none;
+          height: 70px;
+          font-size: 18px; }
+          body .pengajar .context .table-container table thead tr:hover {
+            cursor: pointer; }
+        body .pengajar .context .table-container table tbody tr {
+          font-family: "Poppins-light", Arial, Helvetica, sans-serif;
+          height: 66px;
+          position: relative;
+          z-index: 1; }
+          body .pengajar .context .table-container table tbody tr:nth-child(odd) {
+            background: #FFE546; }
+    body .pengajar .context .pagination-btn {
+      position: relative;
+      width: 100%; }
+      body .pengajar .context .pagination-btn button {
+        width: 34px;
+        height: 40px;
+        color: #201400;
+        background: none;
+        margin-top: 40px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-weight: bold; }
+        body .pengajar .context .pagination-btn button:focus {
+          outline: none; }
+        body .pengajar .context .pagination-btn button:hover {
+          background: #201400;
+          color: #fff; }
+        body .pengajar .context .pagination-btn button.active {
+          background: #201400;
+          color: #fff; }
   body footer {
     height: 360px;
     background: #201400;

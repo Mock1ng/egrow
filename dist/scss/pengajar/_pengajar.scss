@@ -1,0 +1,89 @@
+.context {
+    position: relative;
+    top: 12vh;
+    padding: $container;
+    height: 200vh;
+
+    h3 {
+        font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        margin: 40px 0;
+    }
+
+    .table-container {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 2px 2px 4px #adadad;
+        width: 100%;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 20px;
+            text-align: center;
+            font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 2;
+
+            thead {
+
+                tr {
+                    border: none;
+                    height: 70px;
+                    font-size: 18px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            tbody {
+
+                tr {
+                    font-family: "Poppins-light", Arial, Helvetica, sans-serif;
+                    height: 66px;
+                    position: relative;
+                    z-index: 1;
+
+                    &:nth-child(odd) {
+                        background: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination-btn {
+        position: relative;
+        width: 100%;
+
+        button {
+            width: 34px;
+            height: 40px;
+            color: $brownOld;
+            background: none;
+            margin-top: 40px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background: $brownOld;
+                color: #fff;
+            }
+
+            &.active {
+                background: $brownOld;
+                color: #fff;
+            }
+        }
+    }
+}
