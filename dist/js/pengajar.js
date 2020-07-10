@@ -225,9 +225,10 @@ const btnContainer = document.querySelector('.pagination-btn');
 const tbody = document.querySelector('tbody');
 
 // Additions
-let btnCounter = parseInt(Math.ceil(data.length / 8));
+let numberOfRows = 8;
+let btnCounter = parseInt(Math.ceil(data.length / numberOfRows));
 let start = 1;
-let end = 8;
+let end = numberOfRows;
 let tempData = data.slice(start - 1, end);
 let dataCounter = start;
 
@@ -257,13 +258,18 @@ const paginationButton = () => {
         button.innerText = i + 1;
         btnContainer.appendChild(button);
     }
+
+    const lastButton = document.createElement('button');
+    lastButton.classList.add('last', 'first-last')
+    lastButton.innerText = 'Last';
+    btnContainer.appendChild(lastButton);
 }
 
 
 
 const paging = () => {
     const buttonSelect = document.querySelectorAll('button');
-    buttonSelect[0].classList.add('active');
+    buttonSelect[1].classList.add('active');
 
     btnContainer.onclick = e => {
         if (e.target.classList[0] !== 'pagination-btn') {
@@ -272,13 +278,31 @@ const paging = () => {
             }
 
             let whereBtnClicked = parseInt(e.target.innerText);
-            start = ((whereBtnClicked - 1) * 8) + 1;
-            end = 8 * whereBtnClicked;
-            dataCounter = start;
 
-            tempData = data.slice(start - 1, end);
-            injectTable(tempData);
-            buttonSelect[whereBtnClicked - 1].classList.add('active');
+            if (e.target.classList[0] == 'first') {
+                start = 1;
+                end = numberOfRows;
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                buttonSelect[1].classList.add('active');
+                console.log(data.length, data);
+
+            } else if (e.target.classList[0] == 'last') {
+                start = data.length - data.length % numberOfRows + 1;
+                end = data.length;
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                buttonSelect[btnCounter].classList.add('active');
+
+            } else {
+                start = ((whereBtnClicked - 1) * numberOfRows) + 1;
+                end = numberOfRows * whereBtnClicked;
+                dataCounter = start;
+
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                buttonSelect[whereBtnClicked].classList.add('active');
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
     position: relative;
     top: 12vh;
     padding: $container;
-    height: 200vh;
+    margin-bottom: 25vh;
 
     h3 {
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
@@ -41,6 +41,10 @@
                     &:hover {
                         cursor: pointer;
                     }
+
+                    th {
+                        padding: 0 10px;
+                    }
                 }
             }
 
@@ -67,16 +71,17 @@
         width: 100%;
 
         button {
-            width: 34px;
-            height: 40px;
+            width: 30px;
+            height: 36px;
             color: $brownOld;
             background: none;
             margin-top: 20px;
             border: none;
-            border-radius: 15px;
+            border-radius: 5px;
             cursor: pointer;
             margin-right: 10px;
             font-weight: bold;
+            transition: all 0.1s ease-in-out;
 
             &:focus {
                 outline: none;
@@ -88,6 +93,13 @@
             }
 
             &.active {
+                background: $brownOld;
+                color: #fff;
+            }
+
+            &.first-last {
+                width: 70px;
+                height: 36px;
                 background: $brownOld;
                 color: #fff;
             }

@@ -841,7 +841,7 @@ body {
     position: relative;
     top: 12vh;
     padding: 0 5%;
-    height: 200vh; }
+    margin-bottom: 25vh; }
     body .pengajar .context h3 {
       font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
       font-size: 48px;
@@ -870,6 +870,8 @@ body {
           font-size: 18px; }
           body .pengajar .context .table-container table thead tr:hover {
             cursor: pointer; }
+          body .pengajar .context .table-container table thead tr th {
+            padding: 0 10px; }
         body .pengajar .context .table-container table tbody tr {
           position: relative;
           font-family: "Poppins-light", Arial, Helvetica, sans-serif;
@@ -883,22 +885,28 @@ body {
       position: relative;
       width: 100%; }
       body .pengajar .context .pagination-btn button {
-        width: 34px;
-        height: 40px;
+        width: 30px;
+        height: 36px;
         color: #201400;
         background: none;
         margin-top: 20px;
         border: none;
-        border-radius: 15px;
+        border-radius: 5px;
         cursor: pointer;
         margin-right: 10px;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: all 0.1s ease-in-out; }
         body .pengajar .context .pagination-btn button:focus {
           outline: none; }
         body .pengajar .context .pagination-btn button:hover {
           background: #201400;
           color: #fff; }
         body .pengajar .context .pagination-btn button.active {
+          background: #201400;
+          color: #fff; }
+        body .pengajar .context .pagination-btn button.first-last {
+          width: 70px;
+          height: 36px;
           background: #201400;
           color: #fff; }
 
