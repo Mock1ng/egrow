@@ -871,7 +871,8 @@ body {
           font-family: "Poppins-light", Arial, Helvetica, sans-serif;
           height: 66px;
           position: relative;
-          z-index: 1; }
+          z-index: 1;
+          animation: fadedTable 0.5s all ease-in-out; }
           body .pengajar .context .table-container table tbody tr:nth-child(odd) {
             background: #FFE546; }
     body .pengajar .context .pagination-btn {
@@ -896,6 +897,18 @@ body {
         body .pengajar .context .pagination-btn button.active {
           background: #201400;
           color: #fff; }
+
+@keyframes fadeInTable {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeOutTable {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0; } }
   body footer {
     height: 360px;
     background: #201400;
