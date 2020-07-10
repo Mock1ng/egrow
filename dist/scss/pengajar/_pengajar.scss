@@ -16,6 +16,7 @@
         position: relative;
         box-shadow: 2px 2px 4px #adadad;
         width: 100%;
+        height: 75vh;
 
         table {
             width: 100%;
@@ -26,11 +27,12 @@
             position: relative;
             z-index: 2;
 
+
             thead {
 
                 tr {
                     border: none;
-                    height: 70px;
+                    height: calc(75vh * 12 / 100);
                     font-size: 18px;
 
                     &:hover {
@@ -40,10 +42,13 @@
             }
 
             tbody {
+                // height: calc(75vh * 88 / 100);
+                // position: relative;
 
                 tr {
+                    position: relative;
                     font-family: "Poppins-light", Arial, Helvetica, sans-serif;
-                    height: 66px;
+                    height: calc(75vh * 88 / 100 / 10);
                     position: relative;
                     z-index: 1;
                     animation: fadedTable 0.5s all ease-in-out;
@@ -65,7 +70,7 @@
             height: 40px;
             color: $brownOld;
             background: none;
-            margin-top: 40px;
+            margin-top: 20px;
             border: none;
             border-radius: 15px;
             cursor: pointer;
@@ -95,16 +100,6 @@
 
         to {
             opacity: 1;
-        }
-    }
-
-    @keyframes fadeOutTable {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 0;
         }
     }
 }

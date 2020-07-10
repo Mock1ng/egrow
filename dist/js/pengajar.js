@@ -238,10 +238,10 @@ const injectTable = (data) => {
     for (let i = 1; i <= data.length; i++) {
 
         const tr = document.createElement('tr');
-        tr.style.animation = `fadeInTable 1s ease-in-out forwards ${i * 0.01}s`
-        tr.innerHTML = `
-                <td class="data">${dataCounter}</td>
-                <td class="data">${data[i - 1].nama}</td>
+        tr.style.animation = `fadeInTable 1s ease-in-out forwards ${i * 0.01}s`;
+        tr.innerHTML =
+            // <td class="data">${dataCounter}</td>
+            `   <td class="data">${data[i - 1].nama}</td>
                 <td class="data">${data[i - 1].jurusan}</td>
                 <td class="data">${data[i - 1].alamat}</td>
                 <td class="data">${data[i - 1].pengalaman}</td>
