@@ -225,9 +225,9 @@ const btnContainer = document.querySelector('.pagination-btn');
 const tbody = document.querySelector('tbody');
 
 // Additions
-let btnCounter = parseInt(Math.ceil(data.length / 10));
+let btnCounter = parseInt(Math.ceil(data.length / 8));
 let start = 1;
-let end = 10;
+let end = 8;
 let tempData = data.slice(start - 1, end);
 let dataCounter = start;
 
@@ -272,8 +272,8 @@ const paging = () => {
             }
 
             let whereBtnClicked = parseInt(e.target.innerText);
-            start = ((whereBtnClicked - 1) * 10) + 1;
-            end = 10 * whereBtnClicked;
+            start = ((whereBtnClicked - 1) * 8) + 1;
+            end = 8 * whereBtnClicked;
             dataCounter = start;
 
             tempData = data.slice(start - 1, end);
