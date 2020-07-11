@@ -68,7 +68,48 @@
 
     .pagination-btn {
         position: relative;
-        width: 100%;
+        width: 350px;
+        overflow: hidden;
+        font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+        display: flex;
+
+        // &::before {
+        //     content: 'First';
+        // }
+
+        // &:after {
+        //     content: 'Last';
+        // }
+
+        // &::after,
+        // &::before {
+        //     display: inline-block;
+        //     width: 70px;
+        //     height: 36px;
+        //     background: $brownOld;
+        //     color: #fff;
+        //     margin-top: 20px;
+        //     cursor: pointer;
+        //     margin-right: 10px;
+        //     font-weight: bold;
+        //     transition: all 0.1s ease-in-out;
+        //     border-radius: 5px;
+        //     text-align: center;
+        //     line-height: 36px;
+        // }
+
+        .wrapper-wrapper {
+            width: 200px;
+            overflow: hidden;
+            position: relative;
+
+            .btn-wrapper {
+                position: absolute;
+                left: 0px;
+                width: max-content;
+                transition: 0.5s all ease;
+            }
+        }
 
         button {
             width: 30px;
@@ -103,7 +144,18 @@
                 background: $brownOld;
                 color: #fff;
             }
+
+            &.first {
+                margin-right: auto;
+            }
+
+            &.last {
+                margin-left: auto;
+                margin-right: unset;
+            }
         }
+
+
     }
 
     @keyframes fadeInTable {
