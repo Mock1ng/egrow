@@ -3,6 +3,11 @@
     top: 12vh;
     padding: $container;
     margin-bottom: 25vh;
+    text-align: center;
+
+    @include for-desktop() {
+        text-align: left;
+    }
 
     h3 {
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
@@ -68,35 +73,14 @@
 
     .pagination-btn {
         position: relative;
-        width: 350px;
         overflow: hidden;
         font-family: 'Open-sans', Arial, Helvetica, sans-serif;
         display: flex;
+        width: 100%;
 
-        // &::before {
-        //     content: 'First';
-        // }
-
-        // &:after {
-        //     content: 'Last';
-        // }
-
-        // &::after,
-        // &::before {
-        //     display: inline-block;
-        //     width: 70px;
-        //     height: 36px;
-        //     background: $brownOld;
-        //     color: #fff;
-        //     margin-top: 20px;
-        //     cursor: pointer;
-        //     margin-right: 10px;
-        //     font-weight: bold;
-        //     transition: all 0.1s ease-in-out;
-        //     border-radius: 5px;
-        //     text-align: center;
-        //     line-height: 36px;
-        // }
+        @include for-desktop() {
+            width: 350px;
+        }
 
         .wrapper-wrapper {
             width: 200px;
@@ -105,7 +89,7 @@
 
             .btn-wrapper {
                 position: absolute;
-                left: 0px;
+                left: 5px;
                 width: max-content;
                 transition: 0.5s all ease;
             }

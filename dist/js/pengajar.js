@@ -438,6 +438,33 @@ const data = [{
 
 ];
 
+let numberData = [{
+        nama: 'agung',
+        umur: 23
+    },
+    {
+        nama: 'wisnu',
+        umur: 20
+    },
+    {
+        nama: 'budi',
+        umur: 29
+    },
+    {
+        nama: 'firman',
+        umur: 18
+    },
+    {
+        nama: 'deni',
+        umur: 30
+    }
+]
+
+// for (let person of data) {
+//     console.log(person.nama);
+// }
+// console.log(numberData.sort((a, b) => a['nama'].localeCompare(b['nama'])));
+
 // Variables
 const table = document.querySelector('table');
 const btnContainer = document.querySelector('.btn-wrapper');
@@ -454,6 +481,10 @@ let btnStart = 0;
 let btnEnd = btnStart + 5;
 let btnMiddle = btnStart + 2;
 let counter = 0;
+let isNamaSorted = false;
+let isJurusanSorted = false;
+let isAlamatSorted = false;
+let isPengalamanSorted = false;
 
 // Functions
 const injectTable = (data) => {
@@ -574,8 +605,79 @@ const paging = (index) => {
     }
 }
 
+// const sortColumn = (columnName, isSort) => {
+//     isAscending = !isAscending;
+//     if (isSort) {
+//         sort = false;
+//     } else {
+//         sort = true;
+//     }
+
+
+//     data.sort((a, b) => isAscending ? a[columnName].localeCompare(b[columnName]) : b[columnName].localeCompare(a[columnName]))
+
+//     tempData = data.slice(start - 1, end);
+//     injectTable(tempData);
+
+//     isSort = !isSort;
+// }
+
+const sortColumn = () => {
+    const thead = document.querySelector('thead');
+
+    thead.onclick = e => {
+
+        switch (e.target.innerText) {
+            case 'Nama Pengajar':
+                data.sort((a, b) => !isNamaSorted ? a['nama'].localeCompare(b['nama']) : b['nama'].localeCompare(a['nama']))
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                isNamaSorted = !isNamaSorted;
+                isJurusanSorted = false;
+                isPengalamanSorted = false;
+                isAlamatSorted = false;
+                break;
+
+            case 'Jurusan':
+                data.sort((a, b) => !isJurusanSorted ? a['jurusan'].localeCompare(b['jurusan']) : b['jurusan'].localeCompare(a['jurusan']))
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                isJurusanSorted = !isJurusanSorted;
+                isNamaSorted = false;
+                isPengalamanSorted = false;
+                isAlamatSorted = false;
+                break;
+
+            case 'Alamat':
+                data.sort((a, b) => !isAlamatSorted ? a['alamat'].localeCompare(b['alamat']) : b['alamat'].localeCompare(a['alamat']))
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                isAlamatSorted = !isAlamatSorted;
+                isPengalamanSorted = false;
+                isJurusanSorted = false;
+                isNamaSorted = false;
+                break;
+
+            case 'Pengalaman':
+                data.sort((a, b) => !isPengalamanSorted ? a['pengalaman'].localeCompare(b['pengalaman']) : b['pengalaman'].localeCompare(a['pengalaman']))
+                tempData = data.slice(start - 1, end);
+                injectTable(tempData);
+                isPengalamanSorted = !isPengalamanSorted;
+                isAlamatSorted = false;
+                isJurusanSorted = false;
+                isNamaSorted = false;
+                break;
+
+            default:
+                break;
+        }
+        console.log(isNamaSorted, isJurusanSorted, isAlamatSorted, isPengalamanSorted);
+    }
+}
+
 const wrapper = () => {
     injectTable(tempData);
     paginationButton();
     paging(1);
+    sortColumn();
 }

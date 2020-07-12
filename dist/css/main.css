@@ -841,7 +841,11 @@ body {
     position: relative;
     top: 12vh;
     padding: 0 5%;
-    margin-bottom: 25vh; }
+    margin-bottom: 25vh;
+    text-align: center; }
+    @media only screen and (min-width: 1000px) {
+      body .pengajar .context {
+        text-align: left; } }
     body .pengajar .context h3 {
       font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
       font-size: 48px;
@@ -883,17 +887,20 @@ body {
             background: #FFE546; }
     body .pengajar .context .pagination-btn {
       position: relative;
-      width: 350px;
       overflow: hidden;
       font-family: 'Open-sans', Arial, Helvetica, sans-serif;
-      display: flex; }
+      display: flex;
+      width: 100%; }
+      @media only screen and (min-width: 1000px) {
+        body .pengajar .context .pagination-btn {
+          width: 350px; } }
       body .pengajar .context .pagination-btn .wrapper-wrapper {
         width: 200px;
         overflow: hidden;
         position: relative; }
         body .pengajar .context .pagination-btn .wrapper-wrapper .btn-wrapper {
           position: absolute;
-          left: 0px;
+          left: 5px;
           width: max-content;
           transition: 0.5s all ease; }
       body .pengajar .context .pagination-btn button {
