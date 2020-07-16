@@ -3,6 +3,7 @@
     position: relative;
     font-family: 'Open-sans', Arial, Helvetica, sans-serif;
     padding: $container;
+    background-image: url('../../assets/backgrounds/contact.svg');
 
     @include for-desktop() {
         height: 567px;
@@ -43,12 +44,12 @@
 
             h3 {
                 font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
-                font-size: 38px;
+                font-size: 28px;
                 font-weight: bold;
                 position: relative;
 
                 @include for-desktop() {
-                    font-size: 48px;
+                    font-size: 28px;
                     margin-bottom: 40px;
                 }
 
@@ -108,10 +109,10 @@
                     }
 
                     a {
-                        font-size: 30px;
+                        font-size: 24px;
                         text-transform: uppercase;
                         color: #008FBC;
-                        width: 180px;
+                        width: 150px;
                         margin-right: 20px;
                         text-decoration: none;
                     }

@@ -722,7 +722,8 @@ body {
       position: relative;
       height: 980px;
       padding-top: 30px;
-      text-align: center; }
+      text-align: center;
+      background-image: url("../../assets/backgrounds/history.svg"); }
       @media only screen and (min-width: 1000px) {
         body .about-content .history {
           padding-top: 70px;
@@ -770,7 +771,8 @@ body {
       height: 537px;
       position: relative;
       font-family: 'Open-sans', Arial, Helvetica, sans-serif;
-      padding: 0 5%; }
+      padding: 0 5%;
+      background-image: url("../../assets/backgrounds/contact.svg"); }
       @media only screen and (min-width: 1000px) {
         body .about-content .contact {
           height: 567px; } }
@@ -801,12 +803,12 @@ body {
           top: -70px; }
           body .about-content .contact .content .hubungi h3 {
             font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
-            font-size: 38px;
+            font-size: 28px;
             font-weight: bold;
             position: relative; }
             @media only screen and (min-width: 1000px) {
               body .about-content .contact .content .hubungi h3 {
-                font-size: 48px;
+                font-size: 28px;
                 margin-bottom: 40px; } }
             body .about-content .contact .content .hubungi h3::after {
               content: '';
@@ -848,10 +850,10 @@ body {
                   margin-right: 20px;
                   bottom: 0; } }
             body .about-content .contact .content .hubungi .social-media .socmed a {
-              font-size: 30px;
+              font-size: 24px;
               text-transform: uppercase;
               color: #008FBC;
-              width: 180px;
+              width: 150px;
               margin-right: 20px;
               text-decoration: none; }
   body .pengajar .context {

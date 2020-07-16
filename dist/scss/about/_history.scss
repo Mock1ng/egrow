@@ -5,6 +5,7 @@
     height: 980px;
     padding-top: 30px;
     text-align: center;
+    background-image: url('../../assets/backgrounds/history.svg');
 
     @include for-desktop() {
         padding-top: 70px;
