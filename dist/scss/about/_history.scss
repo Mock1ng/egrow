@@ -13,41 +13,52 @@
 
     h3 {
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 28px;
         text-align: left;
 
         @include for-desktop() {
-            font-size: 48px;
-            margin-bottom: 50px;
+            font-size: 28px;
+            margin-bottom: 25px;
         }
     }
 
     p {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 25px;
         width: 100%;
-        padding-left: 15px;
         margin-bottom: 20px;
         text-align: left;
 
         @include for-desktop() {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 40px;
             text-align: justify;
-            width: 40%;
-            padding-left: 35px;
+            width: 50%;
         }
     }
 
-    img {
-        width: 100%;
+    .img1 {
+        display: inline-block;
+        width: 80%;
+        margin: 15px 0;
 
         @include for-desktop() {
             position: absolute;
             width: 481px;
             top: 70px;
             right: 5%;
+        }
+    }
+
+    .img2 {
+        display: inline-block;
+        width: 80%;
+
+        @include for-desktop() {
+            position: absolute;
+            width: 481px;
+            top: 420px;
+            right: 20%;
         }
     }
 }

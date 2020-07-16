@@ -720,35 +720,43 @@ body {
           height: 752px; } }
       body .about-content .history h3 {
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 28px;
         text-align: left; }
         @media only screen and (min-width: 1000px) {
           body .about-content .history h3 {
-            font-size: 48px;
-            margin-bottom: 50px; } }
+            font-size: 28px;
+            margin-bottom: 25px; } }
       body .about-content .history p {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 25px;
         width: 100%;
-        padding-left: 15px;
         margin-bottom: 20px;
         text-align: left; }
         @media only screen and (min-width: 1000px) {
           body .about-content .history p {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 40px;
             text-align: justify;
-            width: 40%;
-            padding-left: 35px; } }
-      body .about-content .history img {
-        width: 100%; }
+            width: 50%; } }
+      body .about-content .history .img1 {
+        display: inline-block;
+        width: 80%;
+        margin: 15px 0; }
         @media only screen and (min-width: 1000px) {
-          body .about-content .history img {
+          body .about-content .history .img1 {
             position: absolute;
             width: 481px;
             top: 70px;
             right: 5%; } }
+      body .about-content .history .img2 {
+        display: inline-block;
+        width: 80%; }
+        @media only screen and (min-width: 1000px) {
+          body .about-content .history .img2 {
+            position: absolute;
+            width: 481px;
+            top: 420px;
+            right: 20%; } }
     body .about-content .contact {
       height: 537px;
       position: relative;
@@ -815,7 +823,7 @@ body {
                   width: 40px;
                   height: 40px;
                   color: #008FBC;
-                  font-size: 30px;
+                  font-size: 25px;
                   font-weight: bold;
                   transition: 0.2s all ease-in-out; }
                 body .about-content .contact .content .hubungi .social-media .socmed:hover::after {
