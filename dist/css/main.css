@@ -264,23 +264,32 @@ body {
           outline-offset: 2px; }
   body .jumbotron-about {
     height: 88vh;
-    position: relative;
     background-image: url("../../assets/backgrounds/Jumbotron2.png");
+    position: relative;
     padding: 0 5%;
     color: #fff;
     margin-top: 12vh;
     text-align: center; }
     @media only screen and (min-width: 1000px) {
       body .jumbotron-about {
+        height: 290px;
+        background: url("../../assets/backgrounds/about-us.svg");
+        background-size: contain;
+        width: 100%;
         text-align: left; } }
     body .jumbotron-about h2 {
-      font-size: 80px;
+      font-size: 60px;
       font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
       position: relative;
-      top: 50px; }
+      top: 40%;
+      transform: translateY(-40%); }
       @media only screen and (min-width: 1000px) {
         body .jumbotron-about h2 {
-          font-size: 90px; } }
+          font-size: 70px;
+          position: absolute;
+          right: 5%;
+          top: 50%;
+          transform: translateY(-50%); } }
   body .index-content {
     background: url("../../assets/backgrounds/HOME.png");
     background-size: contain;
