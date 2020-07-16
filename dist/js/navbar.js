@@ -47,23 +47,23 @@ const slidingIndicator = () => {
         } else if (e.target.id == 'about-us') {
             indicator.style.transform = 'translateX(120px)';
             e.target.classList.add('active');
-            activated = 'translateX(120)';
+            activated = 'translateX(120px)';
         } else if (e.target.id == 'program') {
             indicator.style.transform = 'translateX(240px)';
             e.target.classList.add('active');
-            activated = 'translateX(240)';
+            activated = 'translateX(240px)';
         } else if (e.target.id == 'pengajar') {
             indicator.style.transform = 'translateX(360px)';
             e.target.classList.add('active');
-            activated = 'translateX(360)';
+            activated = 'translateX(360px)';
         } else if (e.target.id == 'blog') {
             indicator.style.transform = 'translateX(480px)';
             e.target.classList.add('active');
-            activated = 'translateX(480)';
+            activated = 'translateX(480px)';
         }
     }
 
-    menuWrapper.onmouseout = e => {
+    menuWrapper.onmouseout = () => {
         indicator.style.transform = activated
     }
 }
