@@ -2,15 +2,15 @@
     padding: $container;
     position: relative;
     display: flex;
-    height: 370px;
+    height: 398px;
     width: 100%;
-    background-image: url('../../assets/backgrounds/Private\ TK.svg');
+    // background-image: url('../../assets/backgrounds/Private\ TK.svg');
     padding-top: 50px;
     background-size: cover;
     color: $brownOld;
     text-align: justify;
 
-    .content {
+    .tk-content {
         width: 50%;
         display: inline-block;
         position: relative;
@@ -29,8 +29,8 @@
     }
 
     img {
-        position: relative;
+        position: absolute;
         height: 270px;
-        left: 10%;
+        right: 10%;
     }
 }

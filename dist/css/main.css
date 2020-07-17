@@ -884,62 +884,185 @@ body {
               width: 150px;
               margin-right: 20px;
               text-decoration: none; }
-  body .program-content .tk {
-    padding: 0 5%;
+  body .program-content {
     position: relative;
-    display: flex;
-    height: 370px;
-    width: 100%;
-    background-image: url("../../assets/backgrounds/Private TK.svg");
-    padding-top: 50px;
-    background-size: cover;
-    color: #201400;
-    text-align: justify; }
-    body .program-content .tk .content {
-      width: 50%;
-      display: inline-block;
+    height: 2803px;
+    background: linear-gradient(#FFF6A6, #FFF6A6, #fff, #fff, #fff, #FFF6A6, #fff599); }
+    body .program-content .lines {
+      background-image: url("../../assets/ilustrations/program/lines/lines.svg");
+      height: 2150px;
+      width: 83%;
+      background-size: cover;
+      position: absolute;
+      top: calc(50px + 140px);
+      right: 5%;
+      display: none; }
+      @media only screen and (min-width: 1000px) {
+        body .program-content .lines {
+          display: block; } }
+    body .program-content .tk {
+      padding: 0 5%;
       position: relative;
-      top: 30px;
-      height: max-content; }
-      body .program-content .tk .content h3 {
-        font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 28px; }
-      body .program-content .tk .content p {
-        font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 40px; }
-    body .program-content .tk img {
+      display: flex;
+      height: 398px;
+      width: 100%;
+      padding-top: 50px;
+      background-size: cover;
+      color: #201400;
+      text-align: justify; }
+      body .program-content .tk .tk-content {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        height: max-content; }
+        body .program-content .tk .tk-content h3 {
+          font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 28px; }
+        body .program-content .tk .tk-content p {
+          font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 40px; }
+      body .program-content .tk img {
+        position: absolute;
+        height: 270px;
+        right: 10%; }
+    body .program-content .sd {
+      padding: 0 5%;
       position: relative;
-      height: 270px;
-      left: 10%; }
-  body .program-content .sd {
-    padding: 0 5%;
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 370px;
-    width: 100%;
-    background-image: url("../../assets/backgrounds/Private SD.svg");
-    padding-top: 50px;
-    background-size: cover;
-    color: #201400;
-    text-align: justify; }
-    body .program-content .sd .content {
-      width: 50%;
-      display: inline-block;
+      display: flex;
+      flex-direction: row-reverse;
+      height: 459px;
+      width: 100%;
+      padding-top: 50px;
+      background-size: cover;
+      color: #201400;
+      text-align: justify; }
+      body .program-content .sd .sd-content {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        height: max-content; }
+        body .program-content .sd .sd-content h3 {
+          font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 28px; }
+        body .program-content .sd .sd-content p {
+          font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 40px; }
+      body .program-content .sd img {
+        position: absolute;
+        height: 270px;
+        top: 10%;
+        left: 10%; }
+    body .program-content .smp {
+      padding: 0 5%;
       position: relative;
-      top: 30px;
-      height: max-content; }
-      body .program-content .sd .content h3 {
-        font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 28px; }
-      body .program-content .sd .content p {
-        font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 40px; }
-    body .program-content .sd img {
+      display: flex;
+      height: 505px;
+      width: 100%;
+      padding-top: 50px;
+      background-size: cover;
+      color: #201400;
+      text-align: justify; }
+      body .program-content .smp .smp-content {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        height: max-content; }
+        body .program-content .smp .smp-content h3 {
+          font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 28px; }
+        body .program-content .smp .smp-content p {
+          font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 40px; }
+      body .program-content .smp img {
+        position: absolute;
+        height: 270px;
+        right: 10%; }
+    body .program-content .mengaji {
+      padding: 0 5%;
       position: relative;
-      height: 270px;
-      top: 8%;
-      right: 11%; }
+      display: flex;
+      flex-direction: row-reverse;
+      height: 505px;
+      width: 100%;
+      padding-top: 50px;
+      background-size: cover;
+      color: #201400;
+      text-align: justify; }
+      body .program-content .mengaji .mengaji-content {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        height: max-content; }
+        body .program-content .mengaji .mengaji-content h3 {
+          font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 28px; }
+        body .program-content .mengaji .mengaji-content p {
+          font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 40px; }
+      body .program-content .mengaji img {
+        position: absolute;
+        height: 300px;
+        left: 12%;
+        top: 13%; }
+    body .program-content .renang {
+      padding: 0 5%;
+      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      height: 505px;
+      width: 100%;
+      padding-top: 50px;
+      background-size: cover;
+      color: #201400;
+      text-align: justify; }
+      body .program-content .renang .renang-content {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        height: max-content; }
+        body .program-content .renang .renang-content h3 {
+          font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 28px; }
+        body .program-content .renang .renang-content p {
+          font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 40px; }
+      body .program-content .renang img {
+        position: absolute;
+        height: 400px;
+        left: 10%;
+        top: 0; }
+    body .program-content .musik {
+      padding: 0 5%;
+      position: relative;
+      display: flex;
+      height: 431px;
+      width: 100%;
+      padding-top: 50px;
+      background-size: cover;
+      color: #201400;
+      text-align: justify; }
+      body .program-content .musik .musik-content {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        height: max-content; }
+        body .program-content .musik .musik-content h3 {
+          font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 28px; }
+        body .program-content .musik .musik-content p {
+          font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 40px; }
+      body .program-content .musik img {
+        position: absolute;
+        height: 300px;
+        right: 15%;
+        top: 10%; }
   body .pengajar .context {
     position: relative;
     top: 12vh;

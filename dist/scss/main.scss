@@ -81,6 +81,12 @@ body {
 
     // Program directory
     .program-content {
+        position: relative;
+        height: 2803px;
+        background: linear-gradient(#FFF6A6, #FFF6A6, #fff, #fff, #fff, #FFF6A6, #fff599);
+
+        @import './program/lines';
+
         // TK section start
         @import './program/tk';
 

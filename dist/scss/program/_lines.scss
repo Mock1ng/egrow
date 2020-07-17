@@ -1,0 +1,15 @@
+.lines {
+    background-image: url('../../assets/ilustrations/program/lines/lines.svg');
+    height: 2150px;
+    width: 83%;
+    background-size: cover;
+    position: absolute;
+    top: calc(50px + 140px);
+    right: 5%;
+    display: none;
+
+    @include for-desktop() {
+        display: block;
+    }
+
+}
