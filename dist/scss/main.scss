@@ -36,6 +36,7 @@ body {
     // Jumbotron start
     @import './index/jumbotron';
     @import './about/jumbotron-about';
+    @import './program/jumbotron-program';
 
     // Index directory
     .index-content {
@@ -76,6 +77,27 @@ body {
         // Contact section start
         @import './about/hubungi-kami';
 
+    }
+
+    // Program directory
+    .program-content {
+        // TK section start
+        @import './program/tk';
+
+        // SD section start
+        @import './program/sd';
+
+        // SMP section start
+        @import './program/smp';
+
+        // Mengaji section start
+        @import './program/mengaji';
+
+        // Renang section start
+        @import './program/renang';
+
+        // Musik section start
+        @import './program/musik';
     }
 
     // Pengajar directory

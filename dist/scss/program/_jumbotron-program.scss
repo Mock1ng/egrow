@@ -1,0 +1,77 @@
+.jumbotron-program {
+    height: 88vh;
+    background-image: url('../../assets/backgrounds/Jumbotron2.png');
+    position: relative;
+    padding: $container;
+    color: #fff;
+    margin-top: 12vh;
+    text-align: center;
+
+    @include for-desktop() {
+        height: 290px;
+        background: url('../../assets/backgrounds/program.svg');
+        background-size: cover;
+        width: 100%;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 60px;
+        font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+
+        @include for-desktop() {
+            font-size: 60px;
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// .jumbotron-program {
+//     height: 88vh;
+//     background-image: url('../../assets/backgrounds/Jumbotron2.png');
+//     padding: $container;
+//     position: relative;
+//     color: #fff;
+//     margin-top: 12vh;
+//     text-align: center;
+
+//     @include for-desktop() {
+//         position: absolute;
+//         background: unset;
+//         text-align: left;
+//         left: 0;
+//         padding: 0;
+//         height: unset;
+//     }
+
+//     img {
+//         display: none;
+
+//         @include for-desktop() {
+//             display: block;
+//             width: 100%;
+//         }
+//     }
+
+//     h2 {
+//         font-size: 60px;
+//         font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
+//         position: relative;
+//         top: 40%;
+//         transform: translateY(-40%);
+
+//         @include for-desktop() {
+//             font-size: 60px;
+//             position: absolute;
+//             right: 5%;
+//             top: 50%;
+//             transform: translateY(-50%);
+//         }
+//     }
+// }

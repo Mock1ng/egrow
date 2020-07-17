@@ -10,7 +10,7 @@
     @include for-desktop() {
         height: 290px;
         background: url('../../assets/backgrounds/about-us.svg');
-        background-size: contain;
+        background-size: cover;
         width: 100%;
         text-align: left;
     }

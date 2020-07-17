@@ -274,7 +274,7 @@ body {
       body .jumbotron-about {
         height: 290px;
         background: url("../../assets/backgrounds/about-us.svg");
-        background-size: contain;
+        background-size: cover;
         width: 100%;
         text-align: left; } }
     body .jumbotron-about h2 {
@@ -286,6 +286,34 @@ body {
       @media only screen and (min-width: 1000px) {
         body .jumbotron-about h2 {
           font-size: 70px;
+          position: absolute;
+          right: 5%;
+          top: 50%;
+          transform: translateY(-50%); } }
+  body .jumbotron-program {
+    height: 88vh;
+    background-image: url("../../assets/backgrounds/Jumbotron2.png");
+    position: relative;
+    padding: 0 5%;
+    color: #fff;
+    margin-top: 12vh;
+    text-align: center; }
+    @media only screen and (min-width: 1000px) {
+      body .jumbotron-program {
+        height: 290px;
+        background: url("../../assets/backgrounds/program.svg");
+        background-size: cover;
+        width: 100%;
+        text-align: left; } }
+    body .jumbotron-program h2 {
+      font-size: 60px;
+      font-family: 'Poppins-extra-bold', Arial, Helvetica, sans-serif;
+      position: relative;
+      top: 40%;
+      transform: translateY(-40%); }
+      @media only screen and (min-width: 1000px) {
+        body .jumbotron-program h2 {
+          font-size: 60px;
           position: absolute;
           right: 5%;
           top: 50%;
@@ -856,6 +884,62 @@ body {
               width: 150px;
               margin-right: 20px;
               text-decoration: none; }
+  body .program-content .tk {
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    height: 370px;
+    width: 100%;
+    background-image: url("../../assets/backgrounds/Private TK.svg");
+    padding-top: 50px;
+    background-size: cover;
+    color: #201400;
+    text-align: justify; }
+    body .program-content .tk .content {
+      width: 50%;
+      display: inline-block;
+      position: relative;
+      top: 30px;
+      height: max-content; }
+      body .program-content .tk .content h3 {
+        font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px; }
+      body .program-content .tk .content p {
+        font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 40px; }
+    body .program-content .tk img {
+      position: relative;
+      height: 270px;
+      left: 10%; }
+  body .program-content .sd {
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 370px;
+    width: 100%;
+    background-image: url("../../assets/backgrounds/Private SD.svg");
+    padding-top: 50px;
+    background-size: cover;
+    color: #201400;
+    text-align: justify; }
+    body .program-content .sd .content {
+      width: 50%;
+      display: inline-block;
+      position: relative;
+      top: 30px;
+      height: max-content; }
+      body .program-content .sd .content h3 {
+        font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px; }
+      body .program-content .sd .content p {
+        font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 40px; }
+    body .program-content .sd img {
+      position: relative;
+      height: 270px;
+      top: 8%;
+      right: 11%; }
   body .pengajar .context {
     position: relative;
     top: 12vh;
