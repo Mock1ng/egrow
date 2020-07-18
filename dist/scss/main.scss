@@ -82,8 +82,11 @@ body {
     // Program directory
     .program-content {
         position: relative;
-        height: 2803px;
         background: linear-gradient(#FFF6A6, #FFF6A6, #fff, #fff, #fff, #FFF6A6, #fff599);
+
+        @include for-desktop() {
+            height: 2803px;
+        }
 
         @import './program/lines';
 
