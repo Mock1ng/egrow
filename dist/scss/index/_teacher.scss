@@ -1,19 +1,16 @@
 .teacher {
-    height: 520px;
     padding: $container;
     position: relative;
     text-align: center;
-    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin-bottom: 30px;
 
-    .teacher-title {
-        font-size: 36px;
-        display: block;
-        margin-bottom: 20px;
-        font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
-
-        @include for-desktop() {
-            display: none;
-        }
+    @include for-desktop() {
+        height: 500px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .teacher-carousel {
@@ -21,16 +18,16 @@
         height: 300px;
         background: $light-yellow;
         border-radius: 20px;
-        position: absolute;
         left: 50%;
         transform: translateX(-50%);
 
         @include for-desktop() {
             bottom: 0;
             width: 45vw;
-            height: 400px;
+            height: 370px;
             left: unset;
             transform: unset;
+            align-self: center;
         }
 
         .teacher-card {
@@ -75,8 +72,8 @@
         .slick-prev {
 
             @include for-desktop() {
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
                 z-index: 200;
             }
 
@@ -84,7 +81,7 @@
                 color: $orange;
 
                 @include for-desktop() {
-                    font-size: 70px;
+                    font-size: 50px;
                 }
             }
         }
@@ -92,53 +89,53 @@
         .slick-next {
 
             @include for-desktop() {
-                right: -35px;
+                right: -25px;
             }
         }
 
         .slick-prev {
 
             @include for-desktop() {
-                left: -35px;
+                left: -25px;
             }
         }
     }
 
     .content {
-        text-align: right;
         position: relative;
-        height: 100%;
+        text-align: left;
+        text-align: center;
 
         @include for-desktop() {
-            position: absolute;
-            bottom: 25px;
-            right: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             width: 40%;
             height: 85%;
+            text-align: left;
         }
 
         h2 {
             position: relative;
-            font-size: 36px;
-            width: 80%;
-            right: -20%;
-            display: none;
+            font-size: 32px;
             font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
+            margin-bottom: 20px;
 
             @include for-desktop() {
-                display: block;
                 top: 0;
             }
         }
 
-        img {
-            position: absolute;
+        .hijab-ilus {
             width: 80%;
-            bottom: 0;
-            right: 0;
+            transform: rotateY(180deg);
+            display: none;
+            position: absolute;
 
             @include for-desktop() {
                 width: 100%;
+                display: block;
+                position: relative;
             }
         }
     }

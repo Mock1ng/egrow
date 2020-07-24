@@ -1,75 +1,89 @@
 .partnerships {
     padding: $container;
     position: relative;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 
     h2 {
         text-align: center;
-        font-size: 36px;
+        font-size: 26px;
         font-weight: bold;
         margin-bottom: 20px;
         font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
 
         @include for-desktop() {
-            margin-bottom: 50px;
+            font-size: 28px;
+            margin-bottom: 40px;
         }
     }
 
-    .partner {
-        width: 100%;
-        margin-bottom: 70px;
-        font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+    .partner-wrapper {
+        display: grid;
 
         @include for-desktop() {
-            display: flex;
+            grid-template-columns: 1fr 3px 1fr;
+            grid-template-rows: 520px;
         }
 
-        .img {
-            text-align: center;
-            margin-bottom: 20px;
+
+        .partner {
+            font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+            margin-bottom: 40px;
 
             @include for-desktop() {
-                text-align: unset;
-                margin: unset;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                padding: 5%;
+                margin-bottom: 0;
             }
 
-            img {
-                width: 210px;
-                height: auto;
-            }
-        }
-
-        .content {
-            text-align: left;
-
-            @include for-desktop() {
-                text-align: justify;
-                margin-left: 30px;
-            }
-
-
-            h3 {
-                font-size: 30px;
-                margin-bottom: 12px;
-
-                @include for-desktop() {
-                    font-size: 36px;
-                    margin-bottom: 20px;
-                }
-            }
-
-            p {
+            .img {
                 width: 100%;
-                font-size: 14px;
-                line-height: 20px;
+                text-align: center;
 
-                @include for-desktop() {
-                    font-size: 18px;
-                    line-height: 30px;
+                img {
+                    width: 140px;
+                    height: auto;
+
+                    @include for-desktop() {
+                        width: 200px;
+                        height: auto;
+                    }
                 }
             }
+
+            .content {
+
+
+                h3 {
+                    font-size: 26px;
+                    margin-bottom: 12px;
+
+                    @include for-desktop() {
+                        font-size: 28px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 12px;
+                    line-height: 20px;
+
+                    @include for-desktop() {
+                        font-size: 14px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+
+        .divider {
+            background: $yellow;
+            width: 3px;
+            height: 100%;
         }
     }
 }

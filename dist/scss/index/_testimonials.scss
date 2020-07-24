@@ -9,8 +9,8 @@
         .slick-prev {
 
             @include for-desktop() {
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
                 z-index: 200;
             }
 
@@ -18,7 +18,7 @@
                 color: $orange;
 
                 @include for-desktop() {
-                    font-size: 70px;
+                    font-size: 50px;
                     z-index: 200;
                 }
             }
@@ -27,60 +27,92 @@
         .slick-next {
 
             @include for-desktop() {
-                right: -35px;
+                right: -25px;
             }
         }
 
         .slick-prev {
 
             @include for-desktop() {
-                left: -35px;
+                left: -25px;
             }
         }
     }
 
     .card-wrapper {
-        width: 100%;
-        height: 420px;
-        background: $cream;
+        // width: 100%;
+        // height: 420px;
+        // background: $cream;
         border-radius: 50px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
         text-align: center;
         padding-bottom: 10px;
 
         @include for-desktop() {
             flex-direction: row;
-            height: 250px;
+            // height: 250px;
             padding: unset;
         }
 
-        .img-wrapper {
+        .img-wrapper-1 {
+            background-image: url('../../assets/imgs/testimoni1-full-croped.png');
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            border-radius: 50%;
+            background-position: -60px 0;
+            margin: auto;
+            margin-bottom: 40px;
+            // img {
+            //     text-align: center;
+            //     // border-radius: 50px 50px 0 0;
+            //     // width: 100%;
+            //     margin: auto;
 
-            img {
-                border-radius: 50px 50px 0 0;
-                width: 100%;
-                height: auto;
 
-                @include for-desktop() {
-                    border-radius: 50px 0 0 50px;
-                    width: auto;
-                    height: 250px;
-                }
-            }
+            //     @include for-desktop() {
+            //         // border-radius: 50px 0 0 50px;
+            //         width: auto;
+            //         height: 250px;
+            //     }
+            // }
+        }
+
+        .img-wrapper-2 {
+            background-image: url('../../assets/imgs/testimoni2-full-croped.png');
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            border-radius: 50%;
+            background-position: 0px 0;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .img-wrapper-3 {
+            background-image: url('../../assets/imgs/testimoni3-full-croped.png');
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            border-radius: 50%;
+            background-position: -58px 0;
+            margin: auto;
+            margin-bottom: 40px;
         }
 
         .content {
             padding: 0 6%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-evenly;
             height: 100%;
             font-family: 'Open-sans', Arial, Helvetica, sans-serif;
 
             @include for-desktop() {
                 padding-bottom: 10px;
+                padding: 0 140px;
             }
 
             h2 {

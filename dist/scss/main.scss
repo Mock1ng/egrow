@@ -45,7 +45,7 @@ body {
         background-position: 0 0;
 
         @include for-desktop() {
-            background-position: 0 12vh;
+            // background-position: 0 12vh;
         }
 
         // Egrow section start
