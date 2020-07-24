@@ -112,6 +112,8 @@ body {
     // Pengajar directory
     .pengajar {
         @import './pengajar/pengajar';
+
+        @import './pengajar/tambah-pengajar';
     }
 
     // Footer section start

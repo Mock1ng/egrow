@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: Poppins;
-  src: url("../../assets/font/Poppins-Regular.ttf"); }
+  src: url("../../assets/fonts/Poppins-Regular.ttf"); }
 
 @font-face {
   font-family: Poppins-bold;
@@ -365,20 +365,7 @@ body {
             right: 5%;
             width: 40vw;
             top: 50%;
-            transform: translateY(-50%); }
-            body .index-content .egrow .content::after {
-              content: '→';
-              width: 35px;
-              height: 17px;
-              color: #008FBC;
-              font-size: 30px;
-              position: absolute;
-              font-weight: bold;
-              margin-left: 10px;
-              transition: 0.2s all ease-in-out;
-              bottom: 12px; }
-            body .index-content .egrow .content:hover::after {
-              transform: translateX(10px); } }
+            transform: translateY(-50%); } }
         body .index-content .egrow .content h2 {
           font-size: 30px;
           position: relative;
@@ -404,6 +391,8 @@ body {
           color: #008FBC;
           transition: 0.2s all;
           width: 450px; }
+          body .index-content .egrow .content a:hover {
+            text-decoration: underline; }
     body .index-content .teacher {
       height: 520px;
       padding: 0 5%;
@@ -878,12 +867,15 @@ body {
                   margin-right: 20px;
                   bottom: 0; } }
             body .about-content .contact .content .hubungi .social-media .socmed a {
-              font-size: 24px;
+              font-size: 20px;
               text-transform: uppercase;
               color: #008FBC;
               width: 150px;
               margin-right: 20px;
               text-decoration: none; }
+              @media only screen and (min-width: 1000px) {
+                body .about-content .contact .content .hubungi .social-media .socmed a {
+                  font-size: 24px; } }
   body .program-content {
     position: relative;
     background: linear-gradient(#FFF6A6, #FFF6A6, #fff, #fff, #fff, #FFF6A6, #fff599); }
@@ -1192,7 +1184,8 @@ body {
     top: 12vh;
     padding: 0 5%;
     margin-bottom: 25vh;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     @media only screen and (min-width: 1000px) {
       body .pengajar .context {
         text-align: left; } }
@@ -1200,6 +1193,21 @@ body {
       font-family: 'Poppins-bold', Arial, Helvetica, sans-serif;
       font-size: 48px;
       margin: 40px 0; }
+    body .pengajar .context .btn-tambah-pengajar {
+      width: 190px;
+      height: 40px;
+      background: #201400;
+      color: #fff;
+      font-size: 1.1rem;
+      margin: 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 10px;
+      transition: 0.1s all ease;
+      font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+      body .pengajar .context .btn-tambah-pengajar:hover {
+        cursor: pointer;
+        filter: brightness(145%); }
     body .pengajar .context .table-container {
       border: 1px solid #ddd;
       border-radius: 20px;
@@ -1235,6 +1243,12 @@ body {
           animation: fadedTable 0.5s all ease-in-out; }
           body .pengajar .context .table-container table tbody tr:nth-child(odd) {
             background: #FFE546; }
+          body .pengajar .context .table-container table tbody tr .pengajar-action {
+            width: 100%;
+            height: 100%; }
+            body .pengajar .context .table-container table tbody tr .pengajar-action:hover {
+              background: #201400;
+              cursor: pointer; }
     body .pengajar .context .pagination-btn {
       position: relative;
       overflow: hidden;
@@ -1289,6 +1303,78 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+  body .pengajar .tambah-pengajar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    font-family: 'Open-sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body .pengajar .tambah-pengajar .form-wrapper {
+      width: 50%;
+      height: 500px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 4%; }
+      body .pengajar .tambah-pengajar .form-wrapper .close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.2s all; }
+        body .pengajar .tambah-pengajar .form-wrapper .close:hover {
+          cursor: pointer; }
+          body .pengajar .tambah-pengajar .form-wrapper .close:hover .line {
+            background: #201400; }
+        body .pengajar .tambah-pengajar .form-wrapper .close .line {
+          width: 25px;
+          height: 3px;
+          background: #cecece;
+          position: absolute;
+          border-radius: 10px;
+          transition: 0.1s all; }
+          body .pengajar .tambah-pengajar .form-wrapper .close .line.line1 {
+            transform: rotate(45deg); }
+          body .pengajar .tambah-pengajar .form-wrapper .close .line.line2 {
+            transform: rotate(315deg); }
+      body .pengajar .tambah-pengajar .form-wrapper h4 {
+        font-family: 'Poppins-bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 1.6rem; }
+      body .pengajar .tambah-pengajar .form-wrapper form div {
+        margin: 20px 0;
+        font-weight: bold; }
+      body .pengajar .tambah-pengajar .form-wrapper form input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px groove #eeeeee;
+        font-size: 1.1rem; }
+        body .pengajar .tambah-pengajar .form-wrapper form input:focus {
+          outline: none;
+          border-bottom: 2px solid #FFE546; }
+      body .pengajar .tambah-pengajar .form-wrapper form #btn-pengajar {
+        width: 150px;
+        height: 40px;
+        background: #fff;
+        border: 2px solid #201400;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: 0.2s all ease; }
+        body .pengajar .tambah-pengajar .form-wrapper form #btn-pengajar:hover {
+          background: #201400;
+          color: #fff; }
   body footer {
     height: 360px;
     background: #201400;

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Egrow Private</title>
+    <link rel="icon" href="../assets/ilustrations/logo.png" type="image/x-icon">
+    <title>Pengajar | Egrow Private</title>
 </head>
 
 <body>
@@ -45,6 +46,8 @@
         <div class="context">
             <h3>Data Pengajar</h3>
 
+            <div class="btn-tambah-pengajar">Tambah Pengajar</div>
+
             <div class="table-container">
                 <table>
                     <thead>
@@ -69,6 +72,32 @@
             </div>
 
         </div>
+
+        <div class="tambah-pengajar" style="display: none;">
+            <div class="form-wrapper">
+                <div class="close">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                </div>
+                <h4>Masukkan data pengajar</h4>
+                <form action="#">
+                    <div>
+                        <input type="text" id="nama-pengajar" placeholder="Nama Lengkap">
+                    </div>
+                    <div>
+                        <input type="text" id="jurusan-pengajar" placeholder="Jurusan">
+                    </div>
+                    <div>
+                        <input type="text" id="alamat-pengajar" placeholder="Alamat Lengkap">
+                    </div>
+                    <div>
+                        <input type="text" id="pengalaman-pengajar" placeholder="Pengalaman">
+                    </div>
+                    <button id="btn-pengajar">Simpan</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <footer>

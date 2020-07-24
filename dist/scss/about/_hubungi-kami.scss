@@ -109,12 +109,16 @@
                     }
 
                     a {
-                        font-size: 24px;
+                        font-size: 20px;
                         text-transform: uppercase;
                         color: #008FBC;
                         width: 150px;
                         margin-right: 20px;
                         text-decoration: none;
+
+                        @include for-desktop() {
+                            font-size: 24px;
+                        }
                     }
                 }
 

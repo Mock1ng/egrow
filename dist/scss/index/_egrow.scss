@@ -48,22 +48,22 @@
             top: 50%;
             transform: translateY(-50%);
 
-            &::after {
-                content: '→';
-                width: 35px;
-                height: 17px;
-                color: $link;
-                font-size: 30px;
-                position: absolute;
-                font-weight: bold;
-                margin-left: 10px;
-                transition: 0.2s all ease-in-out;
-                bottom: 12px;
-            }
+            // &::after {
+            //     content: '→';
+            //     width: 40px;
+            //     height: 20px;
+            //     color: $link;
+            //     font-size: 25px;
+            //     position: absolute;
+            //     font-weight: bold;
+            //     margin-left: 10px;
+            //     transition: 0.2s all ease-in-out;
+            //     bottom: 12px;
+            // }
 
-            &:hover::after {
-                transform: translateX(10px);
-            }
+            // &:hover::after {
+            //     transform: translateX(10px);
+            // }
 
         }
 
@@ -99,9 +99,9 @@
             transition: 0.2s all;
             width: 450px;
 
-            // &:hover {
-            //     filter: brightness(65%);
-            // }
+            &:hover {
+                text-decoration: underline;
+            }
 
 
 
